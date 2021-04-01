@@ -542,9 +542,9 @@ function addClassesToElements() {
         elements[i].classList.add("dm-light-gray-ft")
     }
     // Zahnrad neben "Mein Portfolio"
-    elements = document.getElementsByClassName("fa-cog");
+    elements = document.getElementsByClassName("button-settings");
     for(var i = 0; i < elements.length; i++) {
-        elements[i].classList.add("dm-light-gray-ft")
+        elements[i].classList.add("dm-light-dark-bg-light-ft")
     }
     
 
