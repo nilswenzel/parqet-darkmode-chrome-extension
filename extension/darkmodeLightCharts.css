@@ -1,0 +1,87 @@
+/*
+ * CSS for popup.html
+ * author: Nils Wenzel
+ * last update: 2021-12-18
+ */
+
+
+
+@import url(darkmode.css);
+
+
+:root {
+  --main-light-bg-color: #f1f1f1;
+  --main-light-font-color: #181818;
+}
+
+
+/* dashboard*/
+.bg-white.shadow.rounded-lg.flex-grow[data-v-ff5b232a]:nth-of-type(1) {
+  background-color: var(--main-light-bg-color) !important;
+  border-top-right-radius: 0.6em !important;
+  border-top-left-radius: 0.6em !important;
+  border-bottom-right-radius: 0.6em !important;
+  border-bottom-left-radius: 0.6em !important;
+}
+.bg-white.shadow.rounded-lg.flex-grow.hidden {
+  background-color: var(--main-light-bg-color) !important;
+  border-top-right-radius: 0.6em !important;
+  border-top-left-radius: 0.6em !important;
+  border-bottom-right-radius: 0.6em !important;
+  border-bottom-left-radius: 0.6em !important;
+}
+.bg-white.shadow.rounded-lg.flex-grow[data-v-ff5b232a]:nth-of-type(1) div[data-v-ff5b232a] {
+  color: var(--main-light-font-color) !important;
+}
+.bg-white.shadow.rounded-lg.flex-grow[data-v-ff5b232a]:nth-of-type(1) label[data-v-bec4304a] {
+  color: var(--main-light-font-color) !important;
+}
+.bg-white.shadow.rounded-lg.flex-grow[data-v-ff5b232a]:nth-of-type(1) label[data-v-27a470c8] {
+  color: var(--main-light-font-color) !important;
+}
+.bg-white.shadow.rounded-lg.flex-grow.hidden label[data-v-27a470c8] {
+  color: var(--main-light-font-color) !important;
+}
+button[data-v-27a470c8] {
+  color: var(--main-light-font-color);
+}
+
+
+
+/* click on stock I own */
+.relative[data-v-33b2992e]:nth-of-type(2) {
+  background-color: var(--main-light-bg-color) !important;
+  border-top-right-radius: 0.6em !important;
+  border-top-left-radius: 0.6em !important;
+  border-bottom-right-radius: 0.6em !important;
+  border-bottom-left-radius: 0.6em !important;
+}
+
+/* click on stock I don't own*/
+.bg-white.rounded-lg.shadow[data-v-33b2992e]:nth-of-type(1) {
+  background-color: var(--main-light-bg-color) !important;
+  border-top-right-radius: 0.6em !important;
+  border-top-left-radius: 0.6em !important;
+  border-bottom-right-radius: 0.6em !important;
+  border-bottom-left-radius: 0.6em !important;
+}
+.bg-white.rounded-lg.shadow[data-v-33b2992e]:nth-of-type(1) dd {
+  color: var(--main-light-font-color) !important;
+}
+.bg-white.rounded-lg.shadow[data-v-33b2992e]:nth-of-type(1) span[data-v-466bfffa] {
+  color: var(--main-light-font-color) !important;
+}
+.bg-white.rounded-lg.shadow[data-v-33b2992e]:nth-of-type(1) div[data-v-33b2992e] {
+  color: var(--main-light-font-color) !important;
+}
+.bg-white.rounded-lg.shadow[data-v-33b2992e]:nth-of-type(1) label[data-v-b2efa46c] {
+  color: var(--main-light-font-color) !important;
+}
+.bg-white.rounded-lg.shadow[data-v-33b2992e]:nth-of-type(1) select[data-v-b2efa46c] {
+  color: var(--main-light-font-color) !important;
+  border-color: var(--main-light-font-color) !important;
+}
+ul[data-v-2b73544e][data-v-33b2992e]{
+  background-color: var(--main-bg-color);
+}
+  

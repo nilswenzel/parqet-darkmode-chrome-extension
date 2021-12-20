@@ -1,20 +1,37 @@
 /*
- * Filename: button.css
- * Author: Nils Wenzel
- * Last update: 2021-03-24
-*/
+ * CSS for popup.html
+ * author: Nils Wenzel
+ * last update: 2021-03-24
+ */
 
 body {
-    height: 30px;
-    width: 60px;
-    background-color: #484848;
+    height: 70px;
+    width: 160px;
+    background-color: #282828;
+}
+
+a {
+    font-size: large;
+    color: #ccc;
+}
+
+h1 {
+    font-size: small;
+    color: rgb(131, 131, 131);
+}
+
+h2 {
+    font-size: smaller;
+    color: rgb(114, 114, 114);
+    text-align: right;
+    padding-bottom: 1em;
 }
 
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 40px;
+    height: 20px;
 }
   
 .switch input { 
@@ -38,30 +55,29 @@ body {
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
+    height: 16px;
+    width: 16px;
+    left: 1px;
+    bottom: 2px;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
 }
-  
+
 input:checked + .slider {
-    background-color: #181818;
+    background-color: #1fa31f;
 }
   
 input:focus + .slider {
-    box-shadow: 0 0 1px #181818;
+    box-shadow: 0 0 1px #1fa31f;
 }
   
 input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
 }
-  
-/* Rounded sliders */
+
 .slider.round {
     border-radius: 34px;
 }
