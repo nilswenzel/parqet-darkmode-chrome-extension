@@ -2,18 +2,9 @@
  * set popup slider and
  * inject darkmode.css in site
  * author: Nils Wenzel
- * last update: 2021-12-05
+ * last update: 2021-12-21
  */
 
-/*
-chrome.runtime.onMessage.addListener(
-    function(request, sender, sendResponse) {
-      // listen for messages sent from background.js
-      if (request.message === 'url') {
-        injectCSS(request.url);
-      }
-});
-*/
 window.onload = function() {
 
     // popup slider
@@ -31,7 +22,7 @@ window.onload = function() {
         // set slider according to state of darkmodeIsActive
         darkmodeIsActive2 = darkmodeIsActive;
         if(darkmodeIsActive) {
-            console.log("[parquet.com darkmode] activate darkmode");
+            console.log("[parqet.com darkmode] activate darkmode");
             try {
                 mySlider.innerHTML = "<label class='switch'> <input type='checkbox' checked> <span class='slider round'></span> </label>";
             } catch(e) {
@@ -53,7 +44,7 @@ window.onload = function() {
         // set slider according to state of lightChartsIsActive
         lightChartsIsActive2 = lightChartsIsActive;
         if(lightChartsIsActive) {
-            console.log("[parquet.com darkmode] activate light mode for charts");
+            console.log("[parqet.com darkmode] activate light mode for charts");
             try {
                 lightChartsSlider.innerHTML = "<label class='switch'> <input type='checkbox' checked> <span class='slider round'></span> </label>";
             } catch(e) {
@@ -118,10 +109,10 @@ function toggleDarkmode() {
             darkmodeIsActive = true;
             chrome.storage.sync.set({ darkmodeIsActive });
         }
-        console.log("[parquet.com darkmode] set darkmode to " + darkmodeIsActive);
+        console.log("[parqet.com darkmode] set darkmode to " + darkmodeIsActive);
     });
 
-    if(window.location.href.match(/app.parqet.com/).length >= 0)                            // if currently on parquet.com
+    if(window.location.href.match(/app.parqet.com/).length >= 0)                            // if currently on parqet.com
         location.reload();                                                                  // reload
 }
 
@@ -135,10 +126,10 @@ function toggleLightCharts() {
             lightChartsIsActive = true;
             chrome.storage.sync.set({ lightChartsIsActive });
         }
-        console.log("[parquet.com darkmode] set light chart to " + lightChartsIsActive);
+        console.log("[parqet.com darkmode] set light chart to " + lightChartsIsActive);
     });
 
-    if(window.location.href.match(/app.parqet.com/).length >= 0)                            // if currently on parquet.com
+    if(window.location.href.match(/app.parqet.com/).length >= 0)                            // if currently on parqet.com
         location.reload();                                                                  // reload
 }
 
@@ -154,23 +145,10 @@ function addCSStoDOM(path) {
 
 function injectCSS(isLightChartsActive) {
 
-    console.log(isLightChartsActive)
     var pathCSS = chrome.runtime.getURL('darkmode.css');
-    if(isLightChartsActive) {
+    if(isLightChartsActive)
         pathCSS = chrome.runtime.getURL('darkmodeLightCharts.css');
-    }
-    console.log(pathCSS)
-
     addCSStoDOM(pathCSS);
-    /*
-    if(currentURL.toString().match(".*\/create")) {
-        pathCSS = chrome.runtime.getURL('darkmodeAddActivity.css');
-        var head = document.getElementsByTagName('head')[0];
-        head.removeChild(head.lastChild);
-        addCSSToDOM(pathCSS);
-        console.log("create");
-    }
-    */
 }
 
 

@@ -1,7 +1,7 @@
 /*
  * set variable to remember if darkmode is activated
  * author: Nils Wenzel
- * last update: 2021-03-24
+ * last update: 2021-12-21
  */
 
 // persisted variable
@@ -15,18 +15,3 @@ chrome.runtime.onInstalled.addListener(() => {
 chrome.runtime.onInstalled.addListener(() => {
   chrome.storage.sync.set({ lightChartsIsActive });
 });
-
-/*
-// when url changes => activate darkmode
-chrome.tabs.onActivated.addListener(function (activeInfo) {
-  chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
-    if (activeInfo.tabId === tabId && changeInfo.url) {
-      console.log("UPDATE");
-       chrome.tabs.sendMessage( tabId, {
-        message: 'url',
-        url: changeInfo.url
-      })
-    }
-  })
-})
-*/
