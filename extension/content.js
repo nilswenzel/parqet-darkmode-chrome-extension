@@ -1,8 +1,8 @@
 /*
- * set popup slider and
+ * set popup sliders and
  * inject darkmode.css in site
  * author: Nils Wenzel
- * last update: 2021-12-21
+ * last update: 2021-12-22
  */
 
 window.onload = function() {
@@ -68,8 +68,6 @@ window.onload = function() {
         }
     });
         
-
-    
     try {
         // when the slider is clicked execute toggleDarkmode()
         mySlider.addEventListener("change", async () => {                                   
@@ -143,6 +141,8 @@ function addCSStoDOM(path) {
     document.getElementsByTagName('head')[0].appendChild(link);
 }
 
+
+
 function injectCSS(isLightChartsActive) {
 
     var pathCSS = chrome.runtime.getURL('darkmode.css');
@@ -150,5 +150,3 @@ function injectCSS(isLightChartsActive) {
         pathCSS = chrome.runtime.getURL('darkmodeLightCharts.css');
     addCSStoDOM(pathCSS);
 }
-
-

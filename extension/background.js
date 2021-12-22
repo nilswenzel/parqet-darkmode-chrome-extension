@@ -1,10 +1,10 @@
 /*
- * set variable to remember if darkmode is activated
+ * initialize variables
  * author: Nils Wenzel
- * last update: 2021-12-21
+ * last update: 2021-12-22
  */
 
-// persisted variable
+// persisted variables
 let darkmodeIsActive = true;
 let lightChartsIsActive = true;
 
