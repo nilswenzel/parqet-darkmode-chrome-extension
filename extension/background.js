@@ -11,7 +11,5 @@ let lightChartsIsActive = true;
 // when installed, set button
 chrome.runtime.onInstalled.addListener(() => {
   chrome.storage.sync.set({ darkmodeIsActive });
-});
-chrome.runtime.onInstalled.addListener(() => {
   chrome.storage.sync.set({ lightChartsIsActive });
 });
