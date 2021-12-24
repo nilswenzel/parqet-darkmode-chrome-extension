@@ -18,7 +18,7 @@
         "matches": ["https://app.parqet.com/*"]
       }
     ],
-    "permissions": ["storage", "activeTab", "scripting", "tabs"],
+    "permissions": ["storage", "activeTab", "scripting"],
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
