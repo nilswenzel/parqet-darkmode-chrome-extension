@@ -25,4 +25,4 @@ Have fun with it!
 - download the [extension](https://chrome.google.com/webstore/detail/parqet-darkmode/jfhpcliegfecjhjehclnhnngbjndodoj?hl=de) and reload parqet.com
 
 ## Support me
-If you want to support me you can do this [here](PayPal.Me/nilswenzel01).
+If you want to support me you can do this [here](https://www.paypal.com/paypalme/nilswenzel01).

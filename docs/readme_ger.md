@@ -23,4 +23,4 @@ Mit [Parqet](https://www.parqet.com) lassen sich Depots visualisieren und analys
 - die [Erweiterung](https://chrome.google.com/webstore/detail/parqet-darkmode/jfhpcliegfecjhjehclnhnngbjndodoj?hl=de) herunterladen und parqet.com neu laden
 
 ## Support
-Falls ihr mich unterstützen wollt könnt ihr dies [hier](PayPal.Me/nilswenzel01) tun.
+Falls ihr mich unterstützen wollt könnt ihr dies [hier](https://www.paypal.com/paypalme/nilswenzel01) tun.
