@@ -17,10 +17,8 @@ window.onload = function() {
 
     // set popup slider everytime the page is 
     // reloaded with persisted variable
-    var darkmodeIsActive2 = false;
     chrome.storage.sync.get("darkmodeIsActive", ({ darkmodeIsActive }) => {
         // set slider according to state of darkmodeIsActive
-        darkmodeIsActive2 = darkmodeIsActive;
         if(darkmodeIsActive) {
             console.log("[parqet.com darkmode] activate darkmode");
             try {
@@ -39,10 +37,8 @@ window.onload = function() {
 
     // set popup slider everytime the page is 
     // reloaded with persisted variable
-    var lightChartsIsActive2 = false;
     chrome.storage.sync.get("lightChartsIsActive", ({ lightChartsIsActive }) => {
         // set slider according to state of lightChartsIsActive
-        lightChartsIsActive2 = lightChartsIsActive;
         if(lightChartsIsActive) {
             console.log("[parqet.com darkmode] activate light mode for charts");
             try {
