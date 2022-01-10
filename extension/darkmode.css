@@ -33,19 +33,16 @@
 /* 
  * sidebar 
  */
-.bg-cool-gray-700 {
+.bg-gray-700 {
   background-color: var(--second-bg-color) !important;
 }
-.bg-cool-gray-700 .nuxt-link-exact-active[data-v-db23cbb4] {
+.bg-gray-700 .nuxt-link-exact-active[data-v-b096c706] {
   background-color: var(--main-active-bg-color) !important;
 }
-.bg-cool-gray-700 .nuxt-link-exact-active[data-v-355acd2e] {
-  background-color: var(--main-active-bg-color) !important;
-}
-.hover\:bg-cool-gray-600:hover {
+.hover\:bg-gray-600:hover {
   background-color: var(--main-hover-bg-color) !important;
 }
-.hover\:bg-cool-gray-800:hover {
+.hover\:bg-gray-800:hover {
   background-color: var(--main-hover-bg-color) !important;
 }
 strong {
@@ -59,23 +56,23 @@ strong {
 /* 
  * searchbar 
  */
-.text-cool-gray-900 {
+.text-gray-900 {
   color: var(--second-darker-font-color) !important;
 }
 .hover\:bg-gray-100:hover {
   background-color: var(--second-bg-color) !important;
   color: var(--main-hover-font-color) !important;
 }
-.text-cool-gray-900::placeholder {
+.text-gray-900::placeholder {
   color: var(--second-darker-font-color) !important;
 }
-.text-cool-gray-900:focus::placeholder {
+.text-gray-900:focus::placeholder {
   color: var(--main-font-color) !important;
 }
-.text-cool-gray-400 {
+.text-gray-400 {
   color: var(--second-darker-font-color) !important;
 }
-.focus-within\:text-cool-gray-600:focus-within {
+.focus-within\:text-gray-600:focus-within {
   color: var(--main-font-color) !important;
 }
 
@@ -110,10 +107,10 @@ strong {
 table th {
   color: var(--second-darkest-font-color) !important;
 }
-td[data-v-6697cac3]:nth-child(2) {
+td[data-v-7e9e175d]:nth-child(2) {
   color: var(--second-darker-font-color) !important;
 }
-th[data-v-6697cac3] {
+th[data-v-7e9e175d] {
   background-color: var(--main-bg-color) !important;
 }
 li[data-v-5193e064]:hover {
@@ -135,13 +132,13 @@ tr th {
 tr:hover {
   background-color: var(--second-bg-color) !important;
 }
-.tabs a[data-v-ff5b232a]:hover {
+.tabs a[data-v-b9acc9d6]:hover {
   color: var(--teal-hover-font-color) !important;
 }
-.tabs a[data-v-ff5b232a] {
+.tabs a[data-v-b9acc9d6] {
   color: var(--main-font-color) !important;
 }
-.tabs a.is-active[data-v-ff5b232a] {
+.tabs a.is-active[data-v-b9acc9d6] {
   color: var(--teal-font-color) !important;
 }
 .text-gray-700 {
@@ -164,7 +161,7 @@ strong[data-v-2dee9094] {
 .bg-gray-50 {
   background-color: var(--second-hover-bg-color) !important;
 }
-.divide-cool-gray-800 > :not([hidden]) ~ :not([hidden]) {
+.divide-gray-800 > :not([hidden]) ~ :not([hidden]) {
   border-color: var(--main-active-bg-color) !important;
 }
 .button.is-text[data-v-44d7e04c] {
@@ -184,11 +181,14 @@ strong[data-v-2dee9094] {
 .text-gray-500 {
   color: var(--main-font-color) !important;
 }
+button[data-v-37e6609c] {
+  color: var(--main-bg-color) !important;
+}
 /* new activity popup ("Aktivität hinzufügen") */
 .text-gray-600 {
   color: var(--main-font-color) !important;
 }
-.bg-cool-gray-100 {
+.bg-gray-100 {
   background-color: var(--second-bg-color) !important;
 }
 .md\:bg-white {
@@ -239,10 +239,10 @@ input[disabled][data-v-33219292] {
  * Analyse
  * https://app.parqet.com/p/./analytics
  */
-.hover\:bg-cool-gray-100:hover {
+.hover\:bg-gray-100:hover {
   background-color: var(--second-bg-color) !important;
 }
-.bg-cool-gray-50 {
+.bg-gray-50 {
   background-color: var(--second-bg-color) !important;
   color: var(--main-font-color) !important;
 }
@@ -252,7 +252,7 @@ input[disabled][data-v-33219292] {
 .even\:bg-gray-50:nth-child(even) {
   background-color: var(--main-bg-color) !important;
 }
-td[data-v-344bc85c] {
+td[data-v-79c4cb48] {
   color: var(--main-hover-font-color) !important;
 }
 .hover\:text-teal-900:hover {
@@ -261,13 +261,19 @@ td[data-v-344bc85c] {
 .tab[data-v-4e9c5fd6] {
   background-color: var(--second-bg-color) !important;
 }
-td[data-v-344bc85c] {
+td[data-v-79c4cb48] {
   background-color: var(--main-bg-color) !important;
 }
 .text-gray-900[data-v-4e9c5fd6] {
   color: var(--teal-font-color) !important;
 }
 .text-gray-500[data-v-4e9c5fd6]:hover {
+  color: var(--teal-hover-font-color) !important;
+}
+.tab[data-v-74e8d605] {
+  background-color: var(--second-bg-color) !important;
+}
+.tab[data-v-74e8d605]:hover {
   color: var(--teal-hover-font-color) !important;
 }
 
@@ -296,13 +302,10 @@ td[data-v-344bc85c] {
   background-color: var(--main-bg-color) !important;
   color: var(--main-font-color) !important;
 }
-dt[data-v-a8026d86] {
+dt[data-v-94972370] {
   color: var(--main-font-color) !important;
 }
-dd[data-v-a8026d86] {
-  color: var(--second-darker-font-color) !important;
-}
-td[data-v-a8026d86]:nth-child(2) {
+td[data-v-94972370]:nth-child(2) {
   color: var(--second-darker-font-color) !important;
 }
 .text-yellow-800 {
@@ -312,8 +315,17 @@ td[data-v-a8026d86]:nth-child(2) {
 .bg-yellow-100 {
   background-color: var(--second-bg-color) !important;
 }
-dd[data-v-a8026d86] {
+dd[data-v-94972370] {
   color: var(--second-darker-font-color);
+}
+.tabs a[data-v-1b557d32] {
+  color: var(--main-font-color) !important;
+}
+.tabs a.is-active[data-v-1b557d32] {
+  color: var(--teal-font-color) !important;
+}
+.tabs a[data-v-1b557d32]:hover {
+  color: var(--teal-hover-font-color) !important;
 }
 
 
@@ -325,7 +337,7 @@ dd[data-v-a8026d86] {
 .mt-6 {
   margin-top: 0px !important;
 }
-.text-cool-gray-600 {
+.text-gray-600 {
   color: var(--main-font-color) !important;
 }
 
@@ -379,7 +391,7 @@ a[data-v-6abe1104]{
 a[data-v-6abe1104]:hover {
   color: var(--blue-link-hover-font-color);
 }
-.text-cool-gray-500 {
+.text-gray-500 {
   color: var(--main-font-color) !important;
 }
 .text-gray-400 {
@@ -444,16 +456,16 @@ option {
  * Dividenden
  * https://app.parqet.com/p/./dividends
  */
-.performance[data-v-59983754] {
+.performance[data-v-71bf96f6] {
   color: var(--main-font-color) !important;
 }
-.amount-title[data-v-59983754] {
+.amount-title[data-v-71bf96f6] {
   color: var(--main-font-color) !important;
 }
-.tabs li.is-active a[data-v-59983754] {
+.tabs li.is-active a[data-v-71bf96f6] {
   color: var(--main-font-color) !important;
 }
-.tabs a[data-v-59983754]:hover {
+.tabs a[data-v-71bf96f6]:hover {
   background-color: var(--second-hover-bg-color) !important;
   color: var(--main-hover-font-color) !important;
 }
@@ -461,13 +473,13 @@ option {
   background-color: var(--second-bg-color) !important;
   color: var(--main-hover-font-color) !important;
 }
-.box[data-v-59983754] {
+.box[data-v-71bf96f6] {
   background-color: var(--second-bg-color) !important;
 }
-.has-text-grey[data-v-59983754] {
+.has-text-grey[data-v-71bf96f6] {
   color: var(--main-font-color) !important;
 }
-.subtitle[data-v-59983754] {
+.subtitle[data-v-71bf96f6] {
   color: var(--second-darker-font-color) !important;
 }
 .info-tooltip .tooltip-content {
@@ -482,7 +494,7 @@ option {
  * Märkte
  * https://app.parqet.com/markets?compare=.
  */
-.group:hover .group-hover\:text-cool-gray-900 {
+.group:hover .group-hover\:text-gray-900 {
   color: var(--main-hover-font-color) !important;
 }
 /* Beliebte Watchlists */
