@@ -107,10 +107,10 @@ strong {
 table th {
   color: var(--second-darkest-font-color) !important;
 }
-td[data-v-7e9e175d]:nth-child(2) {
+td[data-v-6f8a4896]:nth-child(2) {  /* text in Rendite-table of the middle column */
   color: var(--second-darker-font-color) !important;
 }
-th[data-v-7e9e175d] {
+th[data-v-6f8a4896] {
   background-color: var(--main-bg-color) !important;
 }
 li[data-v-5193e064]:hover {
@@ -132,14 +132,14 @@ tr th {
 tr:hover {
   background-color: var(--second-bg-color) !important;
 }
-.tabs a[data-v-b9acc9d6]:hover {
-  color: var(--teal-hover-font-color) !important;
-}
-.tabs a[data-v-b9acc9d6] {
+.tabs a[data-v-5d744734] {  /* Wert-Enwicklung, Dividenden, Performance buttons */
   color: var(--main-font-color) !important;
 }
-.tabs a.is-active[data-v-b9acc9d6] {
+.tabs a.is-active[data-v-5d744734] { /* Wert-Enwicklung, Dividenden, Performance buttons */
   color: var(--teal-font-color) !important;
+}
+.tabs a[data-v-5d744734]:hover { /* Wert-Enwicklung, Dividenden, Performance buttons */
+  color: var(--teal-hover-font-color) !important;
 }
 .text-gray-700 {
   color: var(--main-font-color) !important;
@@ -252,17 +252,15 @@ input[disabled][data-v-33219292] {
 .even\:bg-gray-50:nth-child(even) {
   background-color: var(--main-bg-color) !important;
 }
-td[data-v-79c4cb48] {
+td[data-v-729bad74] { /* Kapitalfluss-table rows and columns */
   color: var(--main-hover-font-color) !important;
+  background-color: var(--main-bg-color) !important;
 }
 .hover\:text-teal-900:hover {
   color: var(--teal-hover-font-color) !important;
 }
 .tab[data-v-4e9c5fd6] {
   background-color: var(--second-bg-color) !important;
-}
-td[data-v-79c4cb48] {
-  background-color: var(--main-bg-color) !important;
 }
 .text-gray-900[data-v-4e9c5fd6] {
   color: var(--teal-font-color) !important;
@@ -302,10 +300,10 @@ td[data-v-79c4cb48] {
   background-color: var(--main-bg-color) !important;
   color: var(--main-font-color) !important;
 }
-dt[data-v-94972370] {
+dt[data-v-35338768] { /* text Kursgewinn, Anteile, Einstieg, Eingezahlt, Realisiert, Dividenden, Kosten */
   color: var(--main-font-color) !important;
 }
-td[data-v-94972370]:nth-child(2) {
+td[data-v-35338768]:nth-child(2) {
   color: var(--second-darker-font-color) !important;
 }
 .text-yellow-800 {
@@ -315,17 +313,20 @@ td[data-v-94972370]:nth-child(2) {
 .bg-yellow-100 {
   background-color: var(--second-bg-color) !important;
 }
-dd[data-v-94972370] {
-  color: var(--second-darker-font-color);
+dd[data-v-35338768] { /* text (row) under Kursgewinn, Anteile, Einstieg, Eingezahlt, Realisiert, Dividenden, Kosten */
+  color: var(--second-darker-font-color) !important;
 }
-.tabs a[data-v-1b557d32] {
+.tabs a[data-v-1b557d32] {  /* Wert-Enwicklung, Kurs, Dividenden buttons */
   color: var(--main-font-color) !important;
 }
-.tabs a.is-active[data-v-1b557d32] {
+.tabs a.is-active[data-v-1b557d32] { /* Wert-Enwicklung, Kurs, Dividenden buttons */
   color: var(--teal-font-color) !important;
 }
-.tabs a[data-v-1b557d32]:hover {
+.tabs a[data-v-1b557d32]:hover { /* Wert-Enwicklung, Kurs, Dividenden buttons */
   color: var(--teal-hover-font-color) !important;
+}
+tr [data-v-6f8a4896] {  /* first row (thead) in Rendite table */
+  background-color: var(--main-bg-color) !important;
 }
 
 
@@ -456,16 +457,16 @@ option {
  * Dividenden
  * https://app.parqet.com/p/./dividends
  */
-.performance[data-v-71bf96f6] {
+.amount-title[data-v-b881aee4] {  /* text Portfolio Wert, Investiert, Ausschüttung, Persoenlich Rendite */
   color: var(--main-font-color) !important;
 }
-.amount-title[data-v-71bf96f6] {
+.performance[data-v-b881aee4] {  /* text of value under Portfolio Wert, Investiert, Ausschüttung, Persoenlich Rendite */
   color: var(--main-font-color) !important;
 }
-.tabs li.is-active a[data-v-71bf96f6] {
+.tabs li.is-active a[data-v-b881aee4] { /* Monatlich, Akkumuliert, Akkumuliert (pro Jahr) buttons */
   color: var(--main-font-color) !important;
 }
-.tabs a[data-v-71bf96f6]:hover {
+.tabs a[data-v-b881aee4]:hover {
   background-color: var(--second-hover-bg-color) !important;
   color: var(--main-hover-font-color) !important;
 }
@@ -473,19 +474,19 @@ option {
   background-color: var(--second-bg-color) !important;
   color: var(--main-hover-font-color) !important;
 }
-.box[data-v-71bf96f6] {
+.box[data-v-b881aee4] { /* Parqet Plus box */
   background-color: var(--second-bg-color) !important;
 }
-.has-text-grey[data-v-71bf96f6] {
+.has-text-grey[data-v-b881aee4] { /* Powered by DivvyDiary text */
   color: var(--main-font-color) !important;
 }
-.subtitle[data-v-71bf96f6] {
+.subtitle[data-v-b881aee4] { /* Kommende Dividenden, Erhaltende Dividenden text */
   color: var(--second-darker-font-color) !important;
 }
-.info-tooltip .tooltip-content {
+.info-tooltip .tooltip-content { /* tooltip of Kommende Dividenden, Erhaltende Dividenden */
   background-color: var(--second-bg-color) !important;
 }
-.arrow-top[data-v-72c16a8d] {
+.arrow-top[data-v-a8a1200c] { /* little arrow under tooltip of Kommende Dividenden, Erhaltende Dividenden */
   border-top: 10px solid var(--second-bg-color) !important;
 }
 

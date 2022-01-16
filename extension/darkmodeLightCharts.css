@@ -15,7 +15,7 @@
 
 
 /* dashboard*/
-.bg-white.shadow.rounded-lg.flex-grow[data-v-b9acc9d6]:nth-of-type(1) {
+.bg-white.shadow.rounded-lg.flex-grow[data-v-5d744734]:nth-of-type(1) { /* Wert-Enwicklung, Dividenden, Performance charts */
   background-color: var(--main-light-bg-color) !important;
   border-top-right-radius: 0.6em !important;
   border-top-left-radius: 0.6em !important;
@@ -29,20 +29,17 @@
   border-bottom-right-radius: 0.6em !important;
   border-bottom-left-radius: 0.6em !important;
 }
-.bg-white.shadow.rounded-lg.flex-grow[data-v-b9acc9d6]:nth-of-type(1) div[data-v-b9acc9d6] {
+.bg-white.shadow.rounded-lg.flex-grow[data-v-5d744734]:nth-of-type(1) div[data-v-5d744734] {  /* Dividenden-chart bottom text */
   color: var(--main-light-font-color) !important;
 }
-.bg-white.shadow.rounded-lg.flex-grow[data-v-b9acc9d6]:nth-of-type(1) label[data-v-bec4304a] {
+.bg-white.shadow.rounded-lg.flex-grow[data-v-5d744734]:nth-of-type(1) label[data-v-37e6609c] { /* Performance-chart upper text */
   color: var(--main-light-font-color) !important;
 }
-.bg-white.shadow.rounded-lg.flex-grow[data-v-b9acc9d6]:nth-of-type(1) label[data-v-27a470c8] {
+.bg-white.shadow.rounded-lg.flex-grow[data-v-5d744734]:nth-of-type(1) label[data-v-cc4aabda] { /* Wert-Entwicklung-chart upper text */
   color: var(--main-light-font-color) !important;
 }
-.bg-white.shadow.rounded-lg.flex-grow.hidden label[data-v-27a470c8] {
+.bg-white.shadow.rounded-lg.flex-grow.hidden label[data-v-37e6609c] { /* Performance-chart upper text when Performance is in a single chart */
   color: var(--main-light-font-color) !important;
-}
-button[data-v-27a470c8] {
-  color: var(--main-light-font-color);
 }
 
 
@@ -67,10 +64,7 @@ ul[data-v-2b73544e][data-v-1b557d32] {
   border-bottom-right-radius: 0.6em !important;
   border-bottom-left-radius: 0.6em !important;
 }
-.bg-white.rounded-lg.shadow[data-v-1b557d32]:nth-of-type(1) dd[data-v-86b176f0] {
-  color: var(--main-light-font-color) !important;
-}
-.bg-white.rounded-lg.shadow[data-v-1b557d32]:nth-of-type(1) span[data-v-86b176f0] {
+.bg-white.rounded-lg.shadow[data-v-1b557d32]:nth-of-type(1) span[data-v-771ea0bc] { /* Wert-Entwicklung, Kurs upper text of value  */
   color: var(--main-light-font-color) !important;
 }
 .bg-white.rounded-lg.shadow[data-v-1b557d32]:nth-of-type(1) div[data-v-1b557d32] {
@@ -83,4 +77,3 @@ ul[data-v-2b73544e][data-v-1b557d32] {
   color: var(--main-light-font-color) !important;
   border-color: var(--main-light-font-color) !important;
 }
-  
