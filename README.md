@@ -1,9 +1,10 @@
-# Parqet darkmode (Chrome Extension)
+# Parqet darkmode
 ![myImage](./docs/gifs/readme_images.gif)
 
 <br/>
 
-Darkmode for parqet.com as a Chrome Web Extension.
+Darkmode for parqet.com as a Chrome Web Extension. <br/>
+Also works with Safari using a script runner, see [here](#safari).
 
 [German version](./docs/readme_ger.md)
 
@@ -22,7 +23,43 @@ Have fun with it!
 [Parqet](https://www.parqet.com) enables you to visualize and analyze your portfolio and keep track of your assets at any time.
 
 ## Usage
-- download the [extension](https://chrome.google.com/webstore/detail/parqet-darkmode/jfhpcliegfecjhjehclnhnngbjndodoj?hl=de) and reload parqet.com
+
+### Chromium based browser (Chrome, Opera, ...)
+- download the [extension](https://chrome.google.com/webstore/detail/parqet-darkmode/jfhpcliegfecjhjehclnhnngbjndodoj?hl) and reload parqet.com
+
+### Safari
+1. download [Userscripts](https://apps.apple.com/us/app/userscripts/id1463298887) extension from the App Store
+2. open Safari
+3. activate Userscripts in the settings
+4. click on the Userscripts-icon and then on "open extension page"
+5. in there click on the "plus"-icon and then "new css"
+6. copy the following:
+    ```
+    /* ==UserStyle==
+    @name        Parqet Darkmode
+    @description Darkmode for parqet.com
+    @match       https://app.parqet.com/*
+    ==/UserStyle== */
+
+    @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/extension/darkmode.css");
+
+    ```
+    OR if you want the option with light charts copy the following: 
+
+    ```
+    /* ==UserStyle==
+    @name        Parqet Darkmode
+    @description Darkmode for parqet.com
+    @match       https://app.parqet.com/*
+    ==/UserStyle== */
+
+    @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/extension/darkmode.css");
+    @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/extension/darkmodeLightCharts.css");
+    ```
+    and paste it
+7. save the file (CMD + s)
+8. reload parqet.com
+
 
 ## Support me
 If you want to support me you can do this [here](https://www.paypal.com/paypalme/nilswenzel01).
