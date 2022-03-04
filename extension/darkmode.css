@@ -36,7 +36,7 @@
 .bg-gray-700 {
   background-color: var(--second-bg-color) !important;
 }
-.bg-gray-700 .nuxt-link-exact-active[data-v-b096c706] {
+.flex.items-center.px-2.py-2.text-sm.font-medium.leading-6.rounded-md.nuxt-link-exact-active.nuxt-link-active.text-gray-100.nuxt-link-exact-active.nuxt-link-active { /* active button */
   background-color: var(--main-active-bg-color) !important;
 }
 .hover\:bg-gray-600:hover {
@@ -97,25 +97,21 @@ strong {
 .bg-white {
   background-color: var(--main-bg-color) !important;
 }
-.table[data-v-40ce71be] {
-  background-color: var(--main-bg-color) !important;
-}
 .tag:not(body) {
   color: var(--main-font-color) !important;
   background-color: var(--second-bg-color) !important;
 }
+dd.text-2xl.font-semibold:not(.text-green-500) { /* text of value under Investiert, Realisiert */
+  color: var(--main-font-color) !important;
+}
 table th {
   color: var(--second-darkest-font-color) !important;
 }
-td[data-v-6f8a4896]:nth-child(2) {  /* text in Rendite-table of the middle column */
+table.w-full.text-sm td:nth-child(2) {  /* text in Rendite-table of the middle column */
   color: var(--second-darker-font-color) !important;
 }
-th[data-v-6f8a4896] {
+table.w-full.text-sm thead tr th {  /* first row (thead) in Rendite table */
   background-color: var(--main-bg-color) !important;
-}
-li[data-v-5193e064]:hover {
-  background-color: var(--second-bg-color) !important;
-  color: var(--main-hover-font-color) !important;
 }
 body {
   color: var(--main-font-color) !important;
@@ -132,14 +128,18 @@ tr th {
 tr:hover {
   background-color: var(--second-bg-color) !important;
 }
-.tabs a[data-v-5d744734] {  /* Wert-Enwicklung, Dividenden, Performance buttons */
+nav.tabs a {  /* Wert-Enwicklung, Dividenden, Performance buttons */
   color: var(--main-font-color) !important;
 }
-.tabs a.is-active[data-v-5d744734] { /* Wert-Enwicklung, Dividenden, Performance buttons */
+nav.tabs a.is-active { /* Wert-Enwicklung, Dividenden, Performance buttons */
   color: var(--teal-font-color) !important;
 }
-.tabs a[data-v-5d744734]:hover { /* Wert-Enwicklung, Dividenden, Performance buttons */
+nav.tabs a:hover { /* Wert-Enwicklung, Dividenden, Performance buttons */
   color: var(--teal-hover-font-color) !important;
+  background-color: var(--main-transparent-bg-color) !important;
+}
+button.border.rounded-full.shadow.overflow-hidden.w-8.h-8.flex.flex-shrink-0.items-center.justify-center { /* magnitude icon in performance chart when comparing performances and when performance chart is small */
+  color: var(--main-bg-color) !important;
 }
 .text-gray-700 {
   color: var(--main-font-color) !important;
@@ -155,34 +155,14 @@ tr:hover {
 .text-gray-800 {
   color: var(--main-font-color) !important;
 }
-strong[data-v-2dee9094] {
-  color: var(--main-font-color) !important;
-}
 .bg-gray-50 {
   background-color: var(--second-hover-bg-color) !important;
 }
 .divide-gray-800 > :not([hidden]) ~ :not([hidden]) {
   border-color: var(--main-active-bg-color) !important;
 }
-.button.is-text[data-v-44d7e04c] {
-  color: var(--main-font-color);
-}
-.button.is-primary[data-v-44d7e04c] {
-  color: var(--main-hover-font-color) !important;
-}
-.button.is-text[data-v-44d7e04c]:hover {
-  background-color: var(--second-hover-bg-color) !important;
-  color: var(--main-hover-font-color) !important;
-}
-.activity .feed-list .list-item[data-v-44d7e04c]:not(.is-type-split):hover {
-  background-color: var(--second-bg-color) !important;
-  color: var(--main-hover-font-color) !important;
-}
 .text-gray-500 {
   color: var(--main-font-color) !important;
-}
-button[data-v-37e6609c] {
-  color: var(--main-bg-color) !important;
 }
 /* new activity popup ("Aktivität hinzufügen") */
 .text-gray-600 {
@@ -197,13 +177,6 @@ button[data-v-37e6609c] {
 [type='text'], [type='email'], [type='url'], [type='number'], [type='date'], [type='month'], [type='search'], [type='time'], [type='week'], [multiple], textarea, select {
   background-color: var(--main-transparent-bg-color) !important;
   color: var(--main-font-color) !important;
-}
-.button[data-v-e88305f6] {
-  background-color: var(--second-bg-color) !important;
-  color: var(--main-font-color) !important;
-}
-input[disabled][data-v-33219292] {
-  background-color: var(--second-bg-color) !important;
 }
 .hover\:bg-teal-700:hover {
   background-color: var(--teal-hover-font-color) !important;
@@ -234,6 +207,9 @@ input[disabled][data-v-33219292] {
 .hover\:text-gray-600:hover {
   color: var(--main-hover-font-color) !important;
 }
+.modern-tooltip { /* tooltip in charts */
+  background-color: var(--second-bg-color) !important;
+}
 
 /*
  * Analyse
@@ -252,26 +228,17 @@ input[disabled][data-v-33219292] {
 .even\:bg-gray-50:nth-child(even) {
   background-color: var(--main-bg-color) !important;
 }
-td[data-v-729bad74] { /* Kapitalfluss-table rows and columns */
+.px-2.text-center.py-2.whitespace-nowrap.text-xs.text-gray-500 { /* Kapitalfluss-table rows and columns */
   color: var(--main-hover-font-color) !important;
   background-color: var(--main-bg-color) !important;
 }
 .hover\:text-teal-900:hover {
   color: var(--teal-hover-font-color) !important;
 }
-.tab[data-v-4e9c5fd6] {
+nav.relative.z-0.rounded-lg.shadow.flex.divide-x.divide-gray-200.allocation-tabs .tab { /* Weitere Allocations buttons: Assetklasse, Sektor, Branche, Region, Land, Typ */
   background-color: var(--second-bg-color) !important;
 }
-.text-gray-900[data-v-4e9c5fd6] {
-  color: var(--teal-font-color) !important;
-}
-.text-gray-500[data-v-4e9c5fd6]:hover {
-  color: var(--teal-hover-font-color) !important;
-}
-.tab[data-v-74e8d605] {
-  background-color: var(--second-bg-color) !important;
-}
-.tab[data-v-74e8d605]:hover {
+nav.relative.z-0.rounded-lg.shadow.flex.divide-x.divide-gray-200.allocation-tabs .tab:hover { /* Weitere Allocations buttons: Assetklasse, Sektor, Branche, Region, Land, Typ */
   color: var(--teal-hover-font-color) !important;
 }
 
@@ -300,11 +267,8 @@ td[data-v-729bad74] { /* Kapitalfluss-table rows and columns */
   background-color: var(--main-bg-color) !important;
   color: var(--main-font-color) !important;
 }
-dt[data-v-35338768] { /* text Kursgewinn, Anteile, Einstieg, Eingezahlt, Realisiert, Dividenden, Kosten */
+dt { /* text Kursgewinn, Anteile, Einstieg, Eingezahlt, Realisiert, Dividenden, Kosten */
   color: var(--main-font-color) !important;
-}
-td[data-v-35338768]:nth-child(2) {
-  color: var(--second-darker-font-color) !important;
 }
 .text-yellow-800 {
   --tw-text-opacity: 1 !important;
@@ -313,20 +277,8 @@ td[data-v-35338768]:nth-child(2) {
 .bg-yellow-100 {
   background-color: var(--second-bg-color) !important;
 }
-dd[data-v-35338768] { /* text (row) under Kursgewinn, Anteile, Einstieg, Eingezahlt, Realisiert, Dividenden, Kosten */
+dd { /* text (row) under Kursgewinn, Anteile, Einstieg, Eingezahlt, Realisiert, Dividenden, Kosten */
   color: var(--second-darker-font-color) !important;
-}
-.tabs a[data-v-1b557d32] {  /* Wert-Enwicklung, Kurs, Dividenden buttons */
-  color: var(--main-font-color) !important;
-}
-.tabs a.is-active[data-v-1b557d32] { /* Wert-Enwicklung, Kurs, Dividenden buttons */
-  color: var(--teal-font-color) !important;
-}
-.tabs a[data-v-1b557d32]:hover { /* Wert-Enwicklung, Kurs, Dividenden buttons */
-  color: var(--teal-hover-font-color) !important;
-}
-tr [data-v-6f8a4896] {  /* first row (thead) in Rendite table */
-  background-color: var(--main-bg-color) !important;
 }
 
 
@@ -348,19 +300,8 @@ tr [data-v-6f8a4896] {  /* first row (thead) in Rendite table */
  * Aktivitäten 
  * https://app.parqet.com/p/./activities
  */
-.table.is-striped tbody tr[data-v-ebf6c5a8]:not(.is-selected):nth-child(2n) {
-  background-color: var(--main-bg-color) !important;
-  color: var(--main-font-color) !important;
-}
 .table thead td, .table thead th {
   color: var(--main-font-color) !important;
-}
-.tabs li.is-active a[data-v-222c32e0] {
-  color: var(--main-font-color) !important;
-}
-.tabs a[data-v-222c32e0]:hover {
-  background-color: var(--second-hover-bg-color) !important;
-  color: var(--main-hover-font-color) !important;
 }
 .button.is-light {
   background-color: var(--main-active-bg-color) !important;
@@ -385,12 +326,6 @@ tr [data-v-6f8a4896] {  /* first row (thead) in Rendite table */
 }
 .button:hover {
   color: var(--main-hover-font-color) !important; 
-}
-a[data-v-6abe1104]{
-  color: var(--blue-link-font-color);
-}
-a[data-v-6abe1104]:hover {
-  color: var(--blue-link-hover-font-color);
 }
 .text-gray-500 {
   color: var(--main-font-color) !important;
@@ -436,18 +371,26 @@ a[data-v-6abe1104]:hover {
 input[type=checkbox] {
   background-color: var(--second-bg-color) !important;
 }
-/* click on a stock */
-.tabs a[data-v-33b2992e] {
-  color: var(--main-font-color) !important;
-}
-.tabs a[data-v-33b2992e]:hover {
-  color: var(--teal-hover-font-color) !important;
-}
-.tabs a.is-active[data-v-33b2992e] {
-  color: var(--teal-font-color) !important;
-}
 option {
   background-color: var(--main-bg-color) !important;
+  color: var(--main-font-color) !important;
+}
+.activities-list-monthly { /* monthly activities table */
+  background-color: var(--main-bg-color) !important;
+}
+.text-right.hidden { /* Steuern, Gebuehren */
+  color: var(--main-font-color) !important;
+}
+.text-right.col-span-2 { /* Betrag, Anteile & Preis */
+  color: var(--main-font-color) !important;
+}
+.content-tax-and-fee {
+  color: var(--second-darker-font-color) !important; /* text in column Steuern, Gebuehren */
+}
+.content-type-and-date .hidden {
+  color: var(--second-darker-font-color) !important; /* date text in left column */
+}
+header.yearly-group-header.pl-0 { /* text of year */
   color: var(--main-font-color) !important;
 }
 
@@ -457,36 +400,32 @@ option {
  * Dividenden
  * https://app.parqet.com/p/./dividends
  */
-.amount-title[data-v-b881aee4] {  /* text Portfolio Wert, Investiert, Ausschüttung, Persoenlich Rendite */
+.amount-title {  /* text Portfolio Wert, Investiert, Ausschüttung, Persoenlich Rendite */
   color: var(--main-font-color) !important;
 }
-.performance[data-v-b881aee4] {  /* text of value under Portfolio Wert, Investiert, Ausschüttung, Persoenlich Rendite */
+.performance {  /* text of value under Portfolio Wert, Investiert, Ausschüttung, Persoenlich Rendite */
   color: var(--main-font-color) !important;
 }
-.tabs li.is-active a[data-v-b881aee4] { /* Monatlich, Akkumuliert, Akkumuliert (pro Jahr) buttons */
+.tabs li.is-active a { /* Monatlich, Akkumuliert, Akkumuliert (pro Jahr) buttons */
   color: var(--main-font-color) !important;
 }
-.tabs a[data-v-b881aee4]:hover {
+.tabs a:hover {
   background-color: var(--second-hover-bg-color) !important;
   color: var(--main-hover-font-color) !important;
 }
-.table.is-hoverable.is-striped tbody tr[data-v-ebf6c5a8]:not(.is-selected):hover, .table.is-hoverable tbody tr[data-v-ebf6c5a8]:not(.is-selected):hover {
-  background-color: var(--second-bg-color) !important;
-  color: var(--main-hover-font-color) !important;
-}
-.box[data-v-b881aee4] { /* Parqet Plus box */
+.box { /* Parqet Plus box */
   background-color: var(--second-bg-color) !important;
 }
-.has-text-grey[data-v-b881aee4] { /* Powered by DivvyDiary text */
+.has-text-grey { /* Powered by DivvyDiary text */
   color: var(--main-font-color) !important;
 }
-.subtitle[data-v-b881aee4] { /* Kommende Dividenden, Erhaltende Dividenden text */
-  color: var(--second-darker-font-color) !important;
+.subtitle { /* Kommende Dividenden, Erhaltende Dividenden text */
+  color: var(--main-font-color) !important;
 }
 .info-tooltip .tooltip-content { /* tooltip of Kommende Dividenden, Erhaltende Dividenden */
   background-color: var(--second-bg-color) !important;
 }
-.arrow-top[data-v-a8a1200c] { /* little arrow under tooltip of Kommende Dividenden, Erhaltende Dividenden */
+.arrow-top { /* little arrow under tooltip of Kommende Dividenden, Erhaltende Dividenden */
   border-top: 10px solid var(--second-bg-color) !important;
 }
 
@@ -498,11 +437,10 @@ option {
 .group:hover .group-hover\:text-gray-900 {
   color: var(--main-hover-font-color) !important;
 }
-/* Beliebte Watchlists */
-li a[data-v-0d831b02] {
+li a.block.rounded-lg { /* Beliebte Watchlists */
   color: var(--main-font-color) !important;
 }
-li a[data-v-0d831b02]:hover {
+li a.block.rounded-lg:hover { /* Beliebte Watchlists */
   color: var(--main-hover-font-color) !important;
   background-color: var(--second-bg-color) !important;
 }
@@ -522,7 +460,7 @@ li a[data-v-0d831b02]:hover {
  .text-red-800 {
   color: var(--red-font-color) !important
  }
- .dropdown-action[data-v-4efc6f4e] {
+h3.font-bold {
   color: var(--main-font-color) !important;
 }
 .button.button-neutral {
