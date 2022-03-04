@@ -42,7 +42,6 @@ Have fun with it!
     ==/UserStyle== */
 
     @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/extension/darkmode.css");
-
     ```
     OR if you want the option with light charts copy the following: 
 

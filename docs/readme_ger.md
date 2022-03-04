@@ -40,7 +40,6 @@ Mit [Parqet](https://www.parqet.com) lassen sich Depots visualisieren und analys
     ==/UserStyle== */
 
     @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/extension/darkmode.css");
-
     ```
     ODER wenn die Charts und Grahiken hell sein sollen Folgendes: 
 
