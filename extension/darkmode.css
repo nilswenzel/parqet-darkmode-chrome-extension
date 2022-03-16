@@ -123,10 +123,6 @@ dd.text-2xl.font-semibold:not(.text-green-500) {
     color: var(--main-font-color) !important;
 }
 
-table th {
-    color: var(--second-darkest-font-color) !important;
-}
-
 table.w-full.text-sm td:nth-child(2) {
     /* text in Rendite-table of the middle column */
     color: var(--second-darker-font-color) !important;
