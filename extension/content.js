@@ -142,7 +142,10 @@ function addCSStoDOM(path) {
 function injectCSS(isLightChartsActive) {
 
     var pathCSS = chrome.runtime.getURL('darkmode.css');
-    if(isLightChartsActive)
-        pathCSS = chrome.runtime.getURL('darkmodeLightCharts.css');
     addCSStoDOM(pathCSS);
+    
+    if(isLightChartsActive) {
+        pathCSS = chrome.runtime.getURL('darkmodeLightCharts.css');
+        addCSStoDOM(pathCSS);
+    }
 }
