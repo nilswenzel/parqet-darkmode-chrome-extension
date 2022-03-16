@@ -141,20 +141,17 @@ body {
     color: var(--main-font-color) !important;
 }
 
-.holding-list td {
-    background-color: var(--main-bg-color) !important;
-}
-
-.holding-list th {
-    color: var(--main-font-color) !important;
-}
-
 tr th {
     background-color: var(--second-bg-color) !important;
+    color: var(--main-font-color) !important
 }
 
 tr:hover {
     background-color: var(--second-bg-color) !important;
+}
+
+td {
+    background-color: var(--main-bg-color) !important;
 }
 
 nav.tabs a {
