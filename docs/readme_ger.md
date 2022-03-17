@@ -39,9 +39,9 @@ Mit [Parqet](https://www.parqet.com) lassen sich Depots visualisieren und analys
     @match       https://app.parqet.com/*
     ==/UserStyle== */
 
-    @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/extension/darkmode.css");
+    @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/extension/darkmode.min.css");
     ```
-    ODER wenn die Charts und Grahiken hell sein sollen Folgendes: 
+    ODER wenn die Charts und Grafiken hell sein sollen (empfohlen) Folgendes: 
 
     ```
     /* ==UserStyle==
@@ -50,8 +50,8 @@ Mit [Parqet](https://www.parqet.com) lassen sich Depots visualisieren und analys
     @match       https://app.parqet.com/*
     ==/UserStyle== */
 
-    @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/extension/darkmode.css");
-    @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/extension/darkmodeLightCharts.css");
+    @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/extension/darkmode.min.css");
+    @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/extension/darkmodeLightCharts.min.css");
     ```
     und dann einfügen
 7. die Datei speichern (CMD + s)

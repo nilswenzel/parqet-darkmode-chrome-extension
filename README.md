@@ -41,9 +41,9 @@ Have fun with it!
     @match       https://app.parqet.com/*
     ==/UserStyle== */
 
-    @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/extension/darkmode.css");
+    @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/extension/darkmode.min.css");
     ```
-    OR if you want the option with light charts copy the following: 
+    OR if you want the option with light charts (recommended) copy the following: 
 
     ```
     /* ==UserStyle==
@@ -52,8 +52,8 @@ Have fun with it!
     @match       https://app.parqet.com/*
     ==/UserStyle== */
 
-    @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/extension/darkmode.css");
-    @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/extension/darkmodeLightCharts.css");
+    @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/extension/darkmode.min.css");
+    @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/extension/darkmodeLightCharts.min.css");
     ```
     and paste it
 7. save the file (CMD + s)
