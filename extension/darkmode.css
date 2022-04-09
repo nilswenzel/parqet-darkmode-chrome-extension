@@ -568,6 +568,9 @@ header.yearly-group-header.pl-0 {
     border-top: 10px solid var(--second-bg-color) !important;
 }
 
+.page-header {
+    background-color: var(--main-bg-color) !important;
+}
 
 /*
  * Märkte
