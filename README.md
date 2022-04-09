@@ -1,5 +1,5 @@
 # Parqet darkmode
-![myImage](./docs/gifs/readme_images.gif)
+![myImage](./docs/gifs/all_images_as_gif.gif)
 
 <br/>
 
@@ -13,10 +13,9 @@ Also works with Safari using a script runner, see [here](#safari).
 ## Information
 Since parqet has no darkmode yet, I’ve decided to create one myself. For examples check out the images. If you find a bug don’t hesitate to contact me and let me know.
 
-The darkmode can be deactivated/activated at any time in the popup. Additionally you can decide whether the charts should be light or dark as well.
-Have fun with it!
+The darkmode can be deactivated/activated at any time in the popup.
 
-- tested on Mac/Windows
+- tested on Mac/Windows (Chrome Version 100.0.4896.75)
 - (unofficial)
 
 ## What is parqet?
@@ -25,7 +24,7 @@ Have fun with it!
 ## Usage
 
 ### Chromium based browser (Chrome, Opera, ...)
-- download the [extension](https://chrome.google.com/webstore/detail/parqet-darkmode/jfhpcliegfecjhjehclnhnngbjndodoj?hl) and reload parqet.com
+- download the [extension](https://chrome.google.com/webstore/detail/parqet-darkmode/jfhpcliegfecjhjehclnhnngbjndodoj?hl) and reload parqet.com. The darkmode is automatically activated.
 
 ### Safari
 1. download [Userscripts](https://apps.apple.com/us/app/userscripts/id1463298887) extension from the App Store
@@ -43,21 +42,9 @@ Have fun with it!
 
     @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/extension/darkmode.min.css");
     ```
-    OR if you want the option with light charts (recommended) copy the following: 
-
-    ```
-    /* ==UserStyle==
-    @name        Parqet Darkmode
-    @description Darkmode for parqet.com
-    @match       https://app.parqet.com/*
-    ==/UserStyle== */
-
-    @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/extension/darkmode.min.css");
-    @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/extension/darkmodeLightCharts.min.css");
-    ```
     and paste it
 7. save the file (CMD + s)
-8. reload parqet.com
+8. reload parqet.com (if it doesn't work properly after the first reload you might have to reload the page again)
 
 
 ## Support me

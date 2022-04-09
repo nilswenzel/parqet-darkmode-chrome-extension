@@ -2,7 +2,7 @@
  * CSS that is injected
  * for darkmode
  * author: Nils Wenzel
- * last update: 2021-12-20
+ * last update: 2022-04-10
  */
 
 
@@ -27,6 +27,8 @@
     --blue-link-font-color: #758eff;
     --blue-link-hover-font-color: #a0b1fa;
     --main-transparent-bg-color: #18181800;
+    --main-light-bg-color: #f1f1f1;
+    --main-light-font-color: #181818;
 }
 
 
@@ -625,4 +627,142 @@ h3.font-bold {
 
 .prose {
     color: var(--main-font-color) !important;
+}
+
+
+
+
+/* 
+ * charts and graphs
+ */
+
+/* when Wert-Entwicklung, Dividenden, Performance is each in one "card" */
+
+#__layout>div>div.flex-1.bg-gray-100.w-screen.min-w-0>main>div.bg-white.min-h-screen>div>div>div>div>div>div>main>div.grid.grid-cols-1.\32 xl\:grid-cols-2.\32 xl\:gap-5>div:nth-child(1) {
+    background-color: var(--main-light-bg-color) !important;
+    border-top-right-radius: 0.6em !important;
+    border-top-left-radius: 0.6em !important;
+    border-bottom-right-radius: 0.6em !important;
+    border-bottom-left-radius: 0.6em !important;
+}
+
+
+/* when Wert-Entwicklung, Dividenden, Performance is seperated in two "cards" */
+
+#__layout>div>div.flex-1.bg-gray-100.w-screen.min-w-0>main>div.bg-white.min-h-screen>div>div>div>div>div>div>main>div.grid.grid-cols-1.\32 xl\:grid-cols-2.\32 xl\:gap-5>div.bg-white.shadow.rounded-lg.flex-grow.hidden.\32 xl\:block {
+    background-color: var(--main-light-bg-color) !important;
+    border-top-right-radius: 0.6em !important;
+    border-top-left-radius: 0.6em !important;
+    border-bottom-right-radius: 0.6em !important;
+    border-bottom-left-radius: 0.6em !important;
+}
+
+#__layout>div>div.flex-1.bg-gray-100.w-screen.min-w-0>main>div.bg-white.min-h-screen>div>div>div>div>div>div>main>div.grid.grid-cols-1.\32 xl\:grid-cols-2.\32 xl\:gap-5>div:nth-child(1)>div:nth-child(4)>div.px-5.pb-5.text-xs.text-right {
+    /* Dividenden-chart bottom text */
+    color: var(--main-light-font-color) !important;
+}
+
+.input-label {
+    /* Performance-chart and Wert-Entwicklung-chart upper text */
+    color: var(--main-light-font-color) !important;
+}
+
+
+/* click on stock I own */
+
+#__layout>div>div.flex-1.bg-gray-100.w-screen.min-w-0>main>div.bg-white.min-h-screen>div>div>div>div>div>main>div.px-4.md\:px-8.grid.grid-cols-3.gap-5>div>div {
+    background-color: var(--main-light-bg-color) !important;
+    border-top-right-radius: 0.6em !important;
+    border-top-left-radius: 0.6em !important;
+    border-bottom-right-radius: 0.6em !important;
+    border-bottom-left-radius: 0.6em !important;
+}
+
+#__layout>div>div.flex-1.bg-gray-100.w-screen.min-w-0>main>div.bg-white.min-h-screen>div>div>div>div>div>main>div.px-4.md\:px-8.grid.grid-cols-3.gap-5>div>div>div>div>div.space-y-10>div.chart-wrapper>div>dl>div>dt>span {
+    /* Wert-Entwicklung, Kurs chart: text "Wert" */
+    color: var(--main-light-font-color) !important;
+}
+
+#__layout>div>div.flex-1.bg-gray-100.w-screen.min-w-0>main>div.bg-white.min-h-screen>div>div>div>div>div>main>div.px-4.md\:px-8.grid.grid-cols-3.gap-5>div>div>div>div>div.space-y-10>div.chart-wrapper>div>dl>div>dd>span {
+    /* Wert-Entwicklung, Kurs chart: upper text of value with "€" */
+    color: var(--main-light-font-color) !important;
+}
+
+#__layout>div>div.flex-1.bg-gray-100.w-screen.min-w-0>main>div.bg-white.min-h-screen>div>div>div>div>div>main>div.px-4.md\:px-8.grid.grid-cols-3.gap-5>div>div>div>div>div.contents>span {
+    /* Dividenden chart: text at bottom */
+    color: var(--main-light-font-color) !important;
+}
+
+#__layout>div>div.flex-1.bg-gray-100.w-screen.min-w-0>main>div.bg-white.min-h-screen>div>div>div>div>div>main>div.px-4.md\:px-8.grid.grid-cols-3.gap-5>div>div>div>div>div.space-y-10>div.flex.flex-row.gap-5>div>label {
+    /* Wert-Entwicklung, Kurs chart: text "Überlagern" */
+    color: var(--main-light-font-color) !important;
+}
+
+#overlayData {
+    /* Wert-Entwicklung, Kurs chart: select under Überlagern */
+    color: var(--main-light-font-color) !important;
+    border-color: var(--main-light-font-color) !important;
+}
+
+
+/* click on stock I don't own */
+
+#__layout>div>div.flex-1.bg-gray-100.w-screen.min-w-0>main>div.min-h-screen>div>div>main>div.px-4.md\:px-8.grid.grid-cols-3.gap-5>div>div {
+    background-color: var(--main-light-bg-color) !important;
+    border-top-right-radius: 0.6em !important;
+    border-top-left-radius: 0.6em !important;
+    border-bottom-right-radius: 0.6em !important;
+    border-bottom-left-radius: 0.6em !important;
+}
+
+#__layout>div>div.flex-1.bg-gray-100.w-screen.min-w-0>main>div.min-h-screen>div>div>main>div.px-4.md\:px-8.grid.grid-cols-3.gap-5>div>div>div>div>div>div.chart-wrapper>div>dl>div>dt>span {
+    /* Wert-Entwicklung, Kurs chart: text Wert */
+    color: var(--main-light-font-color) !important;
+}
+
+#__layout>div>div.flex-1.bg-gray-100.w-screen.min-w-0>main>div.min-h-screen>div>div>main>div.px-4.md\:px-8.grid.grid-cols-3.gap-5>div>div>div>div>div>div.chart-wrapper>div>dl>div>dd>span {
+    /* Wert-Entwicklung, Kurs chart: upper text of value */
+    color: var(--main-light-font-color) !important;
+}
+
+/* Analyse */
+
+#__layout > div > div.flex-1.bg-gray-100.w-screen.min-w-0 > main > div.bg-white.min-h-screen > div:nth-child(1) > div > div > div > div > main > div.space-y-10 > div:nth-child(1) > div.bg-white.shadow.rounded-lg.relative > div.relative.p-5 {
+    background-color: var(--main-light-bg-color) !important;
+}
+
+
+/* Dividenden */
+
+.chart-container.h-60 {
+    /* Monatlich chart */
+    background-color: var(--main-light-bg-color) !important;
+    border-top-right-radius: 0em !important;
+    border-top-left-radius: 0em !important;
+    border-bottom-right-radius: 0.6em !important;
+    border-bottom-left-radius: 0.6em !important;
+}
+
+.dividends-page .chart-container {
+    /* Akkumuliert, Akkumuliert (pro Jahr)  chart */
+    background-color: var(--main-light-bg-color) !important;
+    border-top-right-radius: 0em !important;
+    border-top-left-radius: 0em !important;
+    border-bottom-right-radius: 0.6em !important;
+    border-bottom-left-radius: 0.6em !important;
+}
+
+.h-full.w-full.px-5.py-10 {
+    background-color: var(--main-light-bg-color) !important;
+}
+
+
+/* Maerkte */
+
+.overflow-hidden.bg-white.rounded-lg.shadow div.relative.flex-1.p-5 {
+    background-color: var(--main-light-bg-color) !important;
+    border-top-right-radius: 0em !important;
+    border-top-left-radius: 0em !important;
+    border-bottom-right-radius: 0.6em !important;
+    border-bottom-left-radius: 0.6em !important;
 }
