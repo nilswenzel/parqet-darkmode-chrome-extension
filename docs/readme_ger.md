@@ -4,7 +4,7 @@
 <br/>
 
 Darkmode für parqet.com in Form einer Chrome Web Extension. <br/>
-Funktioniert auch mit Safari unter Zuhilfenahme eines Script-Runners, siehe [hier](#safari).
+Funktioniert auch mit [Safari](#safari) und [Firefox](#firefox) unter Zuhilfenahme eines Script-Runners.
 
 <br/>
 
@@ -43,6 +43,16 @@ Mit [Parqet](https://www.parqet.com) lassen sich Depots visualisieren und analys
     und einfügen
 7. die Datei speichern (CMD + s)
 8. parqet.com neuladen (wenn es nach dem ersten Neuladen noch nicht richtig funktioniert, dann einfach nochmal die Seite neuladen)
+
+### Firefox
+1. das Addon [CustomCSS Injector](https://addons.mozilla.org/de/firefox/addon/customcss-injector/) downloaden
+2. auf das neue erschienene CustomCSS Injector icon klicken
+3. folgendes CSS einfügen:
+    ```
+    @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/extension/darkmode.min.css");
+    ```
+4. `app.parqet.com` als whitelist domain eingeben
+5. save klicken und parqet.com neuladen
 
 ## Support
 Falls ihr mich unterstützen wollt könnt ihr dies [hier](https://www.paypal.com/paypalme/nilswenzel01) tun.

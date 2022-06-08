@@ -4,7 +4,7 @@
 <br/>
 
 Darkmode for parqet.com as a Chrome Web Extension. <br/>
-Also works with Safari using a script runner, see [here](#safari).
+Also works with [Safari](#safari) and [Firefox](#firefox) using a script runner.
 
 [German version](./docs/readme_ger.md)
 
@@ -45,6 +45,16 @@ The darkmode can be deactivated/activated at any time in the popup.
     and paste it
 7. save the file (CMD + s)
 8. reload parqet.com (if it doesn't work properly after the first reload you might have to reload the page again)
+
+### Firefox
+1. download the [CustomCSS Injector](https://addons.mozilla.org/de/firefox/addon/customcss-injector/) addon
+2. click on the newly appeared CustomCSS Injector icon
+3. paste in the following css:
+    ```
+    @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/extension/darkmode.min.css");
+    ```
+4. and use `app.parqet.com` as the whitelist domain
+5. save and reload parqet.com
 
 
 ## Support me
