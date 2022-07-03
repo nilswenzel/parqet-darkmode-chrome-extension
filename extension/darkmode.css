@@ -173,6 +173,16 @@ button.border.rounded-full.shadow.overflow-hidden.w-8.h-8.flex.flex-shrink-0.ite
     color: var(--main-bg-color) !important;
 }
 
+div.relative > div.bg-white.absolute.inset-0.opacity-25.z-20 {
+    /* compare div in performance chart for non parqet+ users */
+    opacity: 0 !important;
+}
+
+#__layout div > h4 {
+    /* 'vergleichen' in performance chart */
+    color: var(--main-light-font-color);
+}
+
 .text-gray-700 {
     color: var(--main-font-color) !important;
 }
@@ -381,6 +391,14 @@ dd {
     color: var(--main-font-color) !important;
 }
 
+.table-value p {
+    color: var(--main-font-color);
+}
+
+.table-label p {
+    color: var(--main-font-color);
+} 
+
 
 /* 
  * Aktivitäten 
@@ -397,6 +415,20 @@ dd {
     color: var(--main-font-color) !important;
 }
 
+/* edit button */
+#activities-list button, .line-action {
+    background-color: var(--second-bg-color);
+    color: var(--main-font-color);
+}
+
+div .dropdown-action {
+    background-color: var(--main-bg-color) !important;
+}
+
+.line-action-wrapper .line-action-button-group .line-action {
+    background-color: var(--second-bg-color) !important;
+    color: var(--main-font-color);
+}
 
 /* when click on holding bearbeiten button */
 
