@@ -407,6 +407,20 @@ dd {
     color: var(--main-font-color) !important;
 }
 
+/* edit button */
+#activities-list button, .line-action {
+    background-color: var(--second-bg-color);
+    color: var(--main-font-color);
+}
+
+div .dropdown-action {
+    background-color: var(--main-bg-color) !important;
+}
+
+.line-action-wrapper .line-action-button-group .line-action {
+    background-color: var(--second-bg-color) !important;
+    color: var(--main-font-color);
+}
 
 /* when click on holding bearbeiten button */
 
