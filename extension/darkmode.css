@@ -391,6 +391,14 @@ dd {
     color: var(--main-font-color) !important;
 }
 
+.table-value p {
+    color: var(--main-font-color);
+}
+
+.table-label p {
+    color: var(--main-font-color);
+} 
+
 
 /* 
  * Aktivitäten 
