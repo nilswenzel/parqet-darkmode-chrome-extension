@@ -40,7 +40,7 @@ The darkmode can be deactivated/activated at any time in the popup.
     @match       https://app.parqet.com/*
     ==/UserStyle== */
 
-    @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/extension/darkmode.min.css");
+    @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/darkmode.min.css");
     ```
     and paste it
 7. save the file (CMD + s)
