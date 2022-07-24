@@ -14,7 +14,7 @@
     },
     "web_accessible_resources":[ 
       {
-        "resources": ["darkmode.css", "darkmodeLightCharts.css"],
+        "resources": ["darkmode.css"],
         "matches": ["https://app.parqet.com/*"]
       }
     ],
