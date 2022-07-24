@@ -51,7 +51,7 @@ The darkmode can be deactivated/activated at any time in the popup.
 2. click on the newly appeared CustomCSS Injector icon
 3. paste in the following css:
     ```
-    @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/extension/darkmode.min.css");
+    @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/darkmode.min.css");
     ```
 4. and use `app.parqet.com` as the whitelist domain
 5. save and reload parqet.com
