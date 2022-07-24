@@ -2,7 +2,6 @@
  * set popup sliders and
  * inject darkmode.css in site
  * author: Nils Wenzel
- * last update: 2022-04-10
  */
 
 window.onload = function() {
