@@ -1,0 +1,812 @@
+/*
+ * CSS that is injected
+ * for darkmode
+ * author: Nils Wenzel
+ * last update: 2022-04-10
+ */
+
+
+/* colors */
+
+:root {
+    --main-bg-color: #181818;
+    --second-bg-color: #282828;
+    --main-font-color: #ccc;
+    --second-darker-font-color: #a3a3a3;
+    --second-darkest-font-color: #858585;
+    --main-hover-font-color: #fff;
+    --main-hover-bg-color: #787878;
+    --second-hover-bg-color: #5a5a5a;
+    --main-active-bg-color: #575757;
+    --teal-font-color: #009991;
+    --teal-hover-font-color: #00afa6;
+    --red-font-color: #f05252;
+    --orange-font-color: #e9c912;
+    --blue-font-color: #0978bd;
+    --green-font-color: #0e9f6f;
+    --blue-link-font-color: #758eff;
+    --blue-link-hover-font-color: #a0b1fa;
+    --main-transparent-bg-color: #18181800;
+    --main-light-bg-color: #f1f1f1;
+    --main-light-font-color: #181818;
+}
+
+
+/* 
+ * sidebar 
+ */
+
+.bg-gray-700 {
+    background-color: var(--second-bg-color) !important;
+}
+
+.flex.items-center.px-2.py-2.text-sm.font-medium.leading-6.rounded-md.nuxt-link-exact-active.nuxt-link-active.text-gray-100.nuxt-link-exact-active.nuxt-link-active {
+    /* active button */
+    background-color: var(--main-active-bg-color) !important;
+}
+
+.hover\:bg-gray-600:hover {
+    background-color: var(--main-hover-bg-color) !important;
+}
+
+.hover\:bg-gray-800:hover {
+    background-color: var(--main-hover-bg-color) !important;
+}
+
+strong {
+    color: var(--main-font-color) !important;
+}
+
+.bg-teal-50 {
+    background-color: var(--main-bg-color) !important;
+}
+
+
+/* 
+ * searchbar 
+ */
+
+.text-gray-900 {
+    color: var(--second-darker-font-color) !important;
+}
+
+.hover\:bg-gray-100:hover {
+    background-color: var(--second-bg-color) !important;
+    color: var(--main-hover-font-color) !important;
+}
+
+.text-gray-900::placeholder {
+    color: var(--second-darker-font-color) !important;
+}
+
+.text-gray-900:focus::placeholder {
+    color: var(--main-font-color) !important;
+}
+
+.text-gray-400 {
+    color: var(--second-darker-font-color) !important;
+}
+
+.focus-within\:text-gray-600:focus-within {
+    color: var(--main-font-color) !important;
+}
+
+
+/* 
+ * profile settings/picture 
+ */
+
+.lg\:hover\:bg-gray-50:hover {
+    background-color: var(--second-hover-bg-color) !important;
+    color: var(--main-hover-font-color) !important;
+}
+
+.bg-gray-200 {
+    background-color: var(--second-bg-color) !important;
+}
+
+
+/* 
+ * dashboard
+ * https://app.parqet.com/p/*
+ */
+
+.bg-white {
+    background-color: var(--main-bg-color) !important;
+}
+
+.tag:not(body) {
+    color: var(--main-font-color) !important;
+    background-color: var(--second-bg-color) !important;
+}
+
+dd.text-2xl.font-semibold:not(.text-green-500) {
+    /* text of value under Investiert, Realisiert */
+    color: var(--main-font-color) !important;
+}
+
+table.w-full.text-sm td:nth-child(2) {
+    /* text in Rendite-table of the middle column */
+    color: var(--second-darker-font-color) !important;
+}
+
+table.w-full.text-sm thead tr th {
+    /* first row (thead) in Rendite table */
+    background-color: var(--main-bg-color) !important;
+}
+
+body {
+    color: var(--main-font-color) !important;
+}
+
+tr th {
+    background-color: var(--second-bg-color) !important;
+    color: var(--main-font-color) !important
+}
+
+tr:hover {
+    background-color: var(--second-bg-color) !important;
+}
+
+td {
+    background-color: var(--main-bg-color) !important;
+}
+
+nav.tabs a {
+    /* Wert-Enwicklung, Dividenden, Performance buttons */
+    color: var(--main-font-color) !important;
+}
+
+nav.tabs a.is-active {
+    /* Wert-Enwicklung, Dividenden, Performance buttons */
+    color: var(--teal-font-color) !important;
+}
+
+nav.tabs a:hover {
+    /* Wert-Enwicklung, Dividenden, Performance buttons */
+    color: var(--teal-hover-font-color) !important;
+    background-color: var(--main-transparent-bg-color) !important;
+}
+
+button.border.rounded-full.shadow.overflow-hidden.w-8.h-8.flex.flex-shrink-0.items-center.justify-center {
+    /* magnitude icon in performance chart when comparing performances and when performance chart is small */
+    color: var(--main-bg-color) !important;
+}
+
+div.relative > div.bg-white.absolute.inset-0.opacity-25.z-20 {
+    /* compare div in performance chart for non parqet+ users */
+    opacity: 0 !important;
+}
+
+#__layout div > h4 {
+    /* 'vergleichen' in performance chart */
+    color: var(--main-light-font-color);
+}
+
+.text-gray-700 {
+    color: var(--main-font-color) !important;
+}
+
+.hover\:bg-gray-50:hover {
+    background-color: transparent !important;
+    color: var(--main-hover-font-color) !important;
+}
+
+.hover\:text-gray-900:hover {
+    background-color: var(--second-hover-bg-color) !important;
+    color: var(--main-hover-font-color) !important;
+}
+
+.text-gray-800 {
+    color: var(--main-font-color) !important;
+}
+
+.bg-gray-50 {
+    background-color: var(--second-hover-bg-color) !important;
+}
+
+.divide-gray-800> :not([hidden])~ :not([hidden]) {
+    border-color: var(--main-active-bg-color) !important;
+}
+
+.text-gray-500 {
+    color: var(--main-font-color) !important;
+}
+
+
+/* new activity popup ("Aktivität hinzufügen") */
+
+.text-gray-600 {
+    color: var(--main-font-color) !important;
+}
+
+.bg-gray-100 {
+    background-color: var(--second-bg-color) !important;
+}
+
+.md\:bg-white {
+    background-color: var(--main-bg-color) !important;
+}
+
+[type="text"],
+[type="email"],
+[type="url"],
+[type="number"],
+[type="date"],
+[type="month"],
+[type="search"],
+[type="time"],
+[type="week"],
+[multiple],
+textarea,
+select {
+    background-color: var(--main-transparent-bg-color) !important;
+    color: var(--main-font-color) !important;
+}
+
+.hover\:bg-teal-700:hover {
+    background-color: var(--teal-hover-font-color) !important;
+    color: var(--main-hover-font-color) !important;
+}
+
+.button.is-primary {
+    background-color: var(--teal-font-color) !important;
+    border-color: transparent !important;
+    color: var(--main-hover-font-color) !important;
+}
+
+.button.is-primary:hover {
+    background-color: var(--teal-hover-font-color) !important;
+    border-color: transparent !important;
+    color: var(--main-hover-font-color) !important;
+}
+
+.bg-red-50 {
+    background-color: var(--main-bg-color) !important;
+    border-color: var(--red-font-color) !important;
+    color: var(--main-font-color) !important;
+}
+
+.hover\:bg-red-100:hover {
+    background-color: var(--main-bg-color) !important;
+    color: var(--main-hover-font-color) !important;
+}
+
+.text-gray-900 {
+    color: var(--main-font-color) !important;
+}
+
+.hover\:text-gray-600:hover {
+    color: var(--main-hover-font-color) !important;
+}
+
+.modern-tooltip {
+    /* tooltip in charts */
+    background-color: var(--second-bg-color) !important;
+}
+
+
+/*
+ * Analyse
+ * https://app.parqet.com/p/./analytics
+ */
+
+.hover\:bg-gray-100:hover {
+    background-color: var(--second-bg-color) !important;
+}
+
+.bg-gray-50 {
+    background-color: var(--second-bg-color) !important;
+    color: var(--main-font-color) !important;
+}
+
+.divide-gray-200> :not([hidden])~ :not([hidden]) {
+    border-color: var(--second-bg-color) !important;
+}
+
+.even\:bg-gray-50:nth-child(even) {
+    background-color: var(--main-bg-color) !important;
+}
+
+.px-2.text-center.py-2.whitespace-nowrap.text-xs.text-gray-500 {
+    /* Kapitalfluss-table rows and columns */
+    color: var(--main-hover-font-color) !important;
+    background-color: var(--main-bg-color) !important;
+}
+
+.hover\:text-teal-900:hover {
+    color: var(--teal-hover-font-color) !important;
+}
+
+nav.relative.z-0.rounded-lg.shadow.flex.divide-x.divide-gray-200.allocation-tabs .tab {
+    /* Weitere Allocations buttons: Assetklasse, Sektor, Branche, Region, Land, Typ */
+    background-color: var(--second-bg-color) !important;
+}
+
+nav.relative.z-0.rounded-lg.shadow.flex.divide-x.divide-gray-200.allocation-tabs .tab:hover {
+    /* Weitere Allocations buttons: Assetklasse, Sektor, Branche, Region, Land, Typ */
+    color: var(--teal-hover-font-color) !important;
+}
+
+
+/* 
+ * click on asset I own
+ * https://app.parqet.com/p/./h/.
+ */
+
+.title {
+    color: var(--main-font-color) !important;
+}
+
+.table {
+    background-color: var(--main-bg-color) !important;
+    color: var(--main-font-color) !important;
+}
+
+.has-background-light td {
+    background-color: var(--main-bg-color) !important;
+}
+
+.button.is-static {
+    background-color: var(--main-bg-color) !important;
+    color: var(--main-active-bg-color) !important;
+    border-color: var(--main-active-bg-color) !important;
+}
+
+.table.is-striped tbody tr:not(.is-selected):nth-child(2n) {
+    background-color: var(--main-bg-color) !important;
+    color: var(--main-font-color) !important;
+}
+
+dt {
+    /* text Kursgewinn, Anteile, Einstieg, Eingezahlt, Realisiert, Dividenden, Kosten */
+    color: var(--main-font-color) !important;
+}
+
+.text-yellow-800 {
+    --tw-text-opacity: 1 !important;
+    color: var(--orange-font-color) !important;
+}
+
+.bg-yellow-100 {
+    background-color: var(--second-bg-color) !important;
+}
+
+dd {
+    /* text (row) under Kursgewinn, Anteile, Einstieg, Eingezahlt, Realisiert, Dividenden, Kosten */
+    color: var(--second-darker-font-color) !important;
+}
+
+
+/*
+ * click on asset in searchbar I don't own
+ * https://app.parqet.com/s/.
+ */
+
+.mt-6 {
+    margin-top: 0px !important;
+}
+
+.text-gray-600 {
+    color: var(--main-font-color) !important;
+}
+
+.table-value p {
+    color: var(--main-font-color);
+}
+
+.table-label p {
+    color: var(--main-font-color);
+} 
+
+
+/* 
+ * Aktivitäten 
+ * https://app.parqet.com/p/./activities
+ */
+
+.table thead td,
+.table thead th {
+    color: var(--main-font-color) !important;
+}
+
+.button.is-light {
+    background-color: var(--main-active-bg-color) !important;
+    color: var(--main-font-color) !important;
+}
+
+/* edit button */
+#activities-list button, .line-action {
+    background-color: var(--second-bg-color);
+    color: var(--main-font-color);
+}
+
+div .dropdown-action {
+    background-color: var(--main-bg-color) !important;
+}
+
+.line-action-wrapper .line-action-button-group .line-action {
+    background-color: var(--second-bg-color) !important;
+    color: var(--main-font-color);
+}
+
+/* when click on holding bearbeiten button */
+
+.modal-card-foot,
+.modal-card-head {
+    background-color: var(--main-bg-color) !important;
+}
+
+.modal-card-body {
+    background-color: var(--main-bg-color) !important;
+}
+
+.modal-card-title {
+    color: var(--main-font-color) !important;
+}
+
+.label {
+    color: var(--main-font-color) !important;
+}
+
+.button {
+    background-color: var(--main-bg-color) !important;
+    color: var(--main-font-color) !important;
+}
+
+.button:hover {
+    color: var(--main-hover-font-color) !important;
+}
+
+.text-gray-500 {
+    color: var(--main-font-color) !important;
+}
+
+.text-gray-400 {
+    color: var(--main-font-color) !important;
+}
+
+.bg-sky-100 {
+    background-color: var(--second-bg-color) !important;
+}
+
+.text-sky-800 {
+    color: var(--blue-font-color) !important;
+}
+
+.text-green-800 {
+    color: var(--green-font-color) !important;
+}
+
+.bg-green-100 {
+    background-color: var(--second-bg-color) !important;
+}
+
+.text-orange-800 {
+    color: var(--red-font-color) !important;
+}
+
+.bg-orange-100 {
+    background-color: var(--second-bg-color) !important;
+}
+
+.pb-8 {
+    background-color: var(--main-bg-color) !important;
+}
+
+.bg-gray-100 {
+    background-color: var(--second-bg-color) !important;
+}
+
+.line-action-button {
+    background-color: var(--second-bg-color) !important;
+    color: var(--main-font-color) !important;
+}
+
+.dropdown-action {
+    color: var(--main-font-color);
+}
+
+.dropdown-action:hover {
+    background-color: var(--second-hover-bg-color) !important;
+    color: var(--main-hover-font-color) !important;
+}
+
+input[type="checkbox"] {
+    background-color: var(--second-bg-color) !important;
+}
+
+option {
+    background-color: var(--main-bg-color) !important;
+    color: var(--main-font-color) !important;
+}
+
+.activities-list-monthly {
+    /* monthly activities table */
+    background-color: var(--main-bg-color) !important;
+}
+
+.text-right.hidden {
+    /* Steuern, Gebuehren */
+    color: var(--main-font-color) !important;
+}
+
+.text-right.col-span-2 {
+    /* Betrag, Anteile & Preis */
+    color: var(--main-font-color) !important;
+}
+
+.content-tax-and-fee {
+    color: var( --second-darker-font-color) !important;
+    /* text in column Steuern, Gebuehren */
+}
+
+.content-type-and-date .hidden {
+    color: var( --second-darker-font-color) !important;
+    /* date text in left column */
+}
+
+header.yearly-group-header.pl-0 {
+    /* text of year */
+    color: var(--main-font-color) !important;
+}
+
+
+/*
+ * Dividenden
+ * https://app.parqet.com/p/./dividends
+ */
+
+.amount-title {
+    /* text Portfolio Wert, Investiert, Ausschüttung, Persoenlich Rendite */
+    color: var(--main-font-color) !important;
+}
+
+.performance {
+    /* text of value under Portfolio Wert, Investiert, Ausschüttung, Persoenlich Rendite */
+    color: var(--main-font-color) !important;
+}
+
+.tabs li.is-active a {
+    /* Monatlich, Akkumuliert, Akkumuliert (pro Jahr) buttons */
+    color: var(--main-font-color) !important;
+}
+
+.tabs a:hover {
+    background-color: var(--second-hover-bg-color) !important;
+    color: var(--main-hover-font-color) !important;
+}
+
+.box {
+    /* Parqet Plus box */
+    background-color: var(--second-bg-color) !important;
+}
+
+.has-text-grey {
+    /* Powered by DivvyDiary text */
+    color: var(--main-font-color) !important;
+}
+
+.subtitle {
+    /* Kommende Dividenden, Erhaltende Dividenden text */
+    color: var(--main-font-color) !important;
+}
+
+.info-tooltip .tooltip-content {
+    /* tooltip of Kommende Dividenden, Erhaltende Dividenden */
+    background-color: var(--second-bg-color) !important;
+}
+
+.arrow-top {
+    /* little arrow under tooltip of Kommende Dividenden, Erhaltende Dividenden */
+    border-top: 10px solid var(--second-bg-color) !important;
+}
+
+.page-header {
+    background-color: var(--main-bg-color) !important;
+}
+
+/*
+ * Märkte
+ * https://app.parqet.com/markets?compare=.
+ */
+
+.group:hover .group-hover\:text-gray-900 {
+    color: var(--main-hover-font-color) !important;
+}
+
+li a.block.rounded-lg {
+    /* Beliebte Watchlists */
+    color: var(--main-font-color) !important;
+}
+
+li a.block.rounded-lg:hover {
+    /* Beliebte Watchlists */
+    color: var(--main-hover-font-color) !important;
+    background-color: var(--second-bg-color) !important;
+}
+
+
+/*
+ * Watchlists
+ * https://app.parqet.com/watchlists
+ */
+
+::placeholder {
+    color: var(--main-font-color) !important;
+}
+
+.bg-red-100 {
+    background-color: var(--second-bg-color) !important;
+}
+
+.text-red-800 {
+    color: var(--red-font-color) !important;
+}
+
+h3.font-bold {
+    color: var(--main-font-color) !important;
+}
+
+.button.button-neutral {
+    background-color: var(--main-bg-color) !important;
+    color: var(--main-font-color) !important;
+}
+
+.button.button-positive-filled {
+    color: var(--main-hover-font-color) !important;
+}
+
+.prose {
+    color: var(--main-font-color) !important;
+}
+
+
+
+
+/* 
+ * charts and graphs
+ */
+
+/* when Wert-Entwicklung, Dividenden, Performance is each in one "card" */
+
+/* Wert Entwicklung, Dividenden Chart */
+#__layout > div > div.flex-1.bg-gray-100.w-screen.min-w-0 > main > div.bg-white.min-h-screen > div:nth-child(1) > div > div > div > div > main > div.grid.grid-cols-1.\32 xl\:grid-cols-2.\32 xl\:gap-5 > div:nth-child(1) {
+    background-color: var(--main-light-bg-color) !important;
+    border-top-right-radius: 0.6em !important;
+    border-top-left-radius: 0.6em !important;
+    border-bottom-right-radius: 0.6em !important;
+    border-bottom-left-radius: 0.6em !important;
+}
+
+/* Performance chart */
+#__layout > div > div.flex-1.bg-gray-100.w-screen.min-w-0 > main > div.bg-white.min-h-screen > div:nth-child(1) > div > div > div > div > main > div.grid.grid-cols-1.\32 xl\:grid-cols-2.\32 xl\:gap-5 > div.bg-white.shadow.rounded-lg.flex-grow.hidden.\32 xl\:block > div > div {
+    background-color: var(--main-light-bg-color) !important;
+    border-bottom-right-radius: 0.6em !important;
+    border-bottom-left-radius: 0.6em !important;
+}
+
+/* when Wert-Entwicklung, Dividenden, Performance is seperated in two "cards" */
+
+#__layout>div>div.flex-1.bg-gray-100.w-screen.min-w-0>main>div.bg-white.min-h-screen>div>div>div>div>div>div>main>div.grid.grid-cols-1.\32 xl\:grid-cols-2.\32 xl\:gap-5>div.bg-white.shadow.rounded-lg.flex-grow.hidden.\32 xl\:block {
+    background-color: var(--main-light-bg-color) !important;
+    border-top-right-radius: 0.6em !important;
+    border-top-left-radius: 0.6em !important;
+    border-bottom-right-radius: 0.6em !important;
+    border-bottom-left-radius: 0.6em !important;
+}
+
+main > div.grid.grid-cols-1.\32 xl\:grid-cols-2.\32 xl\:gap-5 > div:nth-child(1) > div:nth-child(4) > div.px-5.pb-5.text-xs.text-right {
+    /* Dividenden-chart bottom text */
+    color: var(--main-light-font-color) !important;
+}
+
+.input-label {
+    /* Performance-chart and Wert-Entwicklung-chart upper text */
+    color: var(--main-light-font-color) !important;
+}
+
+
+/* click on stock I own */
+
+main>div.px-4.md\:px-8.grid.grid-cols-3.gap-5>div>div {
+    background-color: var(--main-light-bg-color) !important;
+    border-top-right-radius: 0.6em !important;
+    border-top-left-radius: 0.6em !important;
+    border-bottom-right-radius: 0.6em !important;
+    border-bottom-left-radius: 0.6em !important;
+}
+
+main>div.px-4.md\:px-8.grid.grid-cols-3.gap-5>div>div>div>div>div.space-y-10>div.chart-wrapper>div>dl>div>dt>span {
+    /* Wert-Entwicklung, Kurs chart: text "Wert" */
+    color: var(--main-light-font-color) !important;
+}
+
+main>div.px-4.md\:px-8.grid.grid-cols-3.gap-5>div>div>div>div>div.space-y-10>div.chart-wrapper>div>dl>div>dd>span {
+    /* Wert-Entwicklung, Kurs chart: upper text of value with "€" */
+    color: var(--main-light-font-color) !important;
+}
+
+main>div.px-4.md\:px-8.grid.grid-cols-3.gap-5>div>div>div>div>div.contents>span {
+    /* Dividenden chart: text at bottom */
+    color: var(--main-light-font-color) !important;
+}
+
+main>div.px-4.md\:px-8.grid.grid-cols-3.gap-5>div>div>div>div>div.space-y-10>div.flex.flex-row.gap-5>div>label {
+    /* Wert-Entwicklung, Kurs chart: text "Überlagern" */
+    color: var(--main-light-font-color) !important;
+}
+
+#overlayData {
+    /* Wert-Entwicklung, Kurs chart: select under Überlagern */
+    color: var(--main-light-font-color) !important;
+    border-color: var(--main-light-font-color) !important;
+}
+
+/* background color of chart */
+main > div.px-4.md\:px-8.grid.grid-cols-3.gap-5 > div > div > div > div {
+    background-color: var(--main-light-bg-color) !important;
+}
+
+
+/* click on stock I don't own */
+
+#__layout>div>div.flex-1.bg-gray-100.w-screen.min-w-0>main>div.min-h-screen>div>div>main>div.px-4.md\:px-8.grid.grid-cols-3.gap-5>div>div {
+    background-color: var(--main-light-bg-color) !important;
+    border-top-right-radius: 0.6em !important;
+    border-top-left-radius: 0.6em !important;
+    border-bottom-right-radius: 0.6em !important;
+    border-bottom-left-radius: 0.6em !important;
+}
+
+#__layout>div>div.flex-1.bg-gray-100.w-screen.min-w-0>main>div.min-h-screen>div>div>main>div.px-4.md\:px-8.grid.grid-cols-3.gap-5>div>div>div>div>div>div.chart-wrapper>div>dl>div>dt>span {
+    /* Wert-Entwicklung, Kurs chart: text Wert */
+    color: var(--main-light-font-color) !important;
+}
+
+#__layout>div>div.flex-1.bg-gray-100.w-screen.min-w-0>main>div.min-h-screen>div>div>main>div.px-4.md\:px-8.grid.grid-cols-3.gap-5>div>div>div>div>div>div.chart-wrapper>div>dl>div>dd>span {
+    /* Wert-Entwicklung, Kurs chart: upper text of value */
+    color: var(--main-light-font-color) !important;
+}
+
+/* Analyse */
+
+#__layout > div > div.flex-1.bg-gray-100.w-screen.min-w-0 > main > div.bg-white.min-h-screen > div:nth-child(1) > div > div > div > div > main > div.space-y-10 > div:nth-child(1) > div.bg-white.shadow.rounded-lg.relative > div.relative.p-5 {
+    background-color: var(--main-light-bg-color) !important;
+}
+
+
+/* Dividenden */
+
+.chart-container.h-60 {
+    /* Monatlich chart */
+    background-color: var(--main-light-bg-color) !important;
+    border-top-right-radius: 0em !important;
+    border-top-left-radius: 0em !important;
+    border-bottom-right-radius: 0.6em !important;
+    border-bottom-left-radius: 0.6em !important;
+}
+
+.dividends-page .chart-container {
+    /* Akkumuliert, Akkumuliert (pro Jahr)  chart */
+    background-color: var(--main-light-bg-color) !important;
+    border-top-right-radius: 0em !important;
+    border-top-left-radius: 0em !important;
+    border-bottom-right-radius: 0.6em !important;
+    border-bottom-left-radius: 0.6em !important;
+}
+
+.h-full.w-full.px-5.py-10 {
+    background-color: var(--main-light-bg-color) !important;
+}
+
+
+/* Maerkte */
+
+.overflow-hidden.bg-white.rounded-lg.shadow div.relative.flex-1.p-5 {
+    background-color: var(--main-light-bg-color) !important;
+    border-top-right-radius: 0em !important;
+    border-top-left-radius: 0em !important;
+    border-bottom-right-radius: 0.6em !important;
+    border-bottom-left-radius: 0.6em !important;
+}
