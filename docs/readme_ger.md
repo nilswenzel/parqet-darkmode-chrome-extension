@@ -38,7 +38,7 @@ Mit [Parqet](https://www.parqet.com) lassen sich Depots visualisieren und analys
     @match       https://app.parqet.com/*
     ==/UserStyle== */
 
-    @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/extension/darkmode.min.css");
+    @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/darkmode.min.css");
     ```
     und einfügen
 7. die Datei speichern (CMD + s)
@@ -49,7 +49,7 @@ Mit [Parqet](https://www.parqet.com) lassen sich Depots visualisieren und analys
 2. auf das neue erschienene CustomCSS Injector icon klicken
 3. folgendes CSS einfügen:
     ```
-    @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/extension/darkmode.min.css");
+    @import url("https://cdn.statically.io/gh/nilswenzel/parqet-darkmode-chrome-extension/main/darkmode.min.css");
     ```
 4. `app.parqet.com` als whitelist domain eingeben
 5. save klicken und parqet.com neuladen

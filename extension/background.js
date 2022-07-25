@@ -1,7 +1,6 @@
 /*
  * initialize variables
  * author: Nils Wenzel
- * last update: 2022-04-10
  */
 
 // persisted variable
