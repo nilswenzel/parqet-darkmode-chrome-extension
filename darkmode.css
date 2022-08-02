@@ -396,7 +396,7 @@ dd {
 
 .table-label p {
     color: var(--main-font-color);
-} 
+}
 
 
 /* 
@@ -667,32 +667,38 @@ h3.font-bold {
  * charts and graphs
  */
 
-/* when Wert-Entwicklung, Dividenden, Performance is each in one "card" */
+/* when Wert-Entwicklung, Dividenden, Performance is each in two "cards" */
 
 /* Wert Entwicklung, Dividenden Chart */
-#__layout > div > div.flex-1.bg-gray-100.w-screen.min-w-0 > main > div.bg-white.min-h-screen > div:nth-child(1) > div > div > div > div > main > div.grid.grid-cols-1.\32 xl\:grid-cols-2.\32 xl\:gap-5 > div:nth-child(1) {
+main > div.grid.grid-cols-1.\32 xl\:grid-cols-2.\32 xl\:gap-5 > div:nth-child(1) {
     background-color: var(--main-light-bg-color) !important;
     border-top-right-radius: 0.6em !important;
     border-top-left-radius: 0.6em !important;
+}
+
+main > div.grid.grid-cols-1.\32 xl\:grid-cols-2.\32 xl\:gap-5 > div:nth-child(1) div div {
     border-bottom-right-radius: 0.6em !important;
     border-bottom-left-radius: 0.6em !important;
 }
 
 /* Performance chart */
-#__layout > div > div.flex-1.bg-gray-100.w-screen.min-w-0 > main > div.bg-white.min-h-screen > div:nth-child(1) > div > div > div > div > main > div.grid.grid-cols-1.\32 xl\:grid-cols-2.\32 xl\:gap-5 > div.bg-white.shadow.rounded-lg.flex-grow.hidden.\32 xl\:block > div > div {
+main > div.grid.grid-cols-1.\32 xl\:grid-cols-2.\32 xl\:gap-5 > div:nth-child(2) {
     background-color: var(--main-light-bg-color) !important;
+    border-top-right-radius: 0.6em !important;
+    border-top-left-radius: 0.6em !important;
+}
+
+main > div.grid.grid-cols-1.\32 xl\:grid-cols-2.\32 xl\:gap-5 > div:nth-child(2) div div {
     border-bottom-right-radius: 0.6em !important;
     border-bottom-left-radius: 0.6em !important;
 }
 
-/* when Wert-Entwicklung, Dividenden, Performance is seperated in two "cards" */
+/* when Wert-Entwicklung, Dividenden, Performance is seperated in one "card" */
 
-#__layout>div>div.flex-1.bg-gray-100.w-screen.min-w-0>main>div.bg-white.min-h-screen>div>div>div>div>div>div>main>div.grid.grid-cols-1.\32 xl\:grid-cols-2.\32 xl\:gap-5>div.bg-white.shadow.rounded-lg.flex-grow.hidden.\32 xl\:block {
+main>div.grid.grid-cols-1.\32 xl\:grid-cols-2.\32 xl\:gap-5>div.bg-white.shadow.rounded-lg.flex-grow.hidden.\32 xl\:block {
     background-color: var(--main-light-bg-color) !important;
     border-top-right-radius: 0.6em !important;
     border-top-left-radius: 0.6em !important;
-    border-bottom-right-radius: 0.6em !important;
-    border-bottom-left-radius: 0.6em !important;
 }
 
 main > div.grid.grid-cols-1.\32 xl\:grid-cols-2.\32 xl\:gap-5 > div:nth-child(1) > div:nth-child(4) > div.px-5.pb-5.text-xs.text-right {
@@ -708,69 +714,87 @@ main > div.grid.grid-cols-1.\32 xl\:grid-cols-2.\32 xl\:gap-5 > div:nth-child(1)
 
 /* click on stock I own */
 
-main>div.px-4.md\:px-8.grid.grid-cols-3.gap-5>div>div {
+div.chart-box.bg-white {
     background-color: var(--main-light-bg-color) !important;
     border-top-right-radius: 0.6em !important;
     border-top-left-radius: 0.6em !important;
-    border-bottom-right-radius: 0.6em !important;
-    border-bottom-left-radius: 0.6em !important;
 }
 
-main>div.px-4.md\:px-8.grid.grid-cols-3.gap-5>div>div>div>div>div.space-y-10>div.chart-wrapper>div>dl>div>dt>span {
-    /* Wert-Entwicklung, Kurs chart: text "Wert" */
+nav a {
+    /* navbar */
+    color: var(--main-font-color) !important;
+}
+
+nav a.is-active {
+    /* navbar active */
+    color: var(--teal-font-color) !important;
+}
+
+.chart-box nav button {
+    /* navbar in chart  */
+    color: var(--main-font-color) !important;
+}
+
+.chart-box nav button.is-active {
+    /* navbar in chart (active) */
+    color: var(--teal-font-color) !important;
+}
+
+.chart-box dt span {
+    /* font color in chart */
     color: var(--main-light-font-color) !important;
 }
 
-main>div.px-4.md\:px-8.grid.grid-cols-3.gap-5>div>div>div>div>div.space-y-10>div.chart-wrapper>div>dl>div>dd>span {
-    /* Wert-Entwicklung, Kurs chart: upper text of value with "€" */
+.chart-box dd {
+    /* font color in chart */
     color: var(--main-light-font-color) !important;
 }
 
-main>div.px-4.md\:px-8.grid.grid-cols-3.gap-5>div>div>div>div>div.contents>span {
-    /* Dividenden chart: text at bottom */
+.chart-box label {
+    /* font color in chart */
     color: var(--main-light-font-color) !important;
 }
 
-main>div.px-4.md\:px-8.grid.grid-cols-3.gap-5>div>div>div>div>div.space-y-10>div.flex.flex-row.gap-5>div>label {
-    /* Wert-Entwicklung, Kurs chart: text "Überlagern" */
+/* "übersicht" view */
+[title='Derzeitiger Wert'] {
     color: var(--main-light-font-color) !important;
 }
 
-#overlayData {
-    /* Wert-Entwicklung, Kurs chart: select under Überlagern */
+.chart-wrapper figcaption {
     color: var(--main-light-font-color) !important;
-    border-color: var(--main-light-font-color) !important;
 }
 
-/* background color of chart */
-main > div.px-4.md\:px-8.grid.grid-cols-3.gap-5 > div > div > div > div {
+main {
+    background-color: var(--main-bg-color) !important;
+}
+
+table td {
+    color: var(--main-font-color) !important;
+}
+
+div.md\:col-span-2.flex.flex-col.gap-y-12 > div:nth-child(n+2) > div.bg-white.rounded-lg.shadow {
+    /* "Historische Dividenden", "Unternehmenszahlen" chart */
     background-color: var(--main-light-bg-color) !important;
+}
+
+div.sm\:max-h-0.grid.grid-cols-1.lg\:col-span-2.gap-y-10.sm\:gap-x-5 > div:nth-child(2) > div > div > div.px-5.pb-5.text-xs.text-right {
+    /* text "Umfassendere Auswertungen sind auf dem Dividenden Dashboard zu finden" in "Historische Dividenden" chart */
+    color: var(--main-light-font-color) !important;
 }
 
 
 /* click on stock I don't own */
-
-#__layout>div>div.flex-1.bg-gray-100.w-screen.min-w-0>main>div.min-h-screen>div>div>main>div.px-4.md\:px-8.grid.grid-cols-3.gap-5>div>div {
-    background-color: var(--main-light-bg-color) !important;
-    border-top-right-radius: 0.6em !important;
-    border-top-left-radius: 0.6em !important;
-    border-bottom-right-radius: 0.6em !important;
-    border-bottom-left-radius: 0.6em !important;
+.empty-logo {
+    background-color: var(--main-active-bg-color) !important;
+}
+.copy {
+    background-color: var(--main-active-bg-color) !important;
 }
 
-#__layout>div>div.flex-1.bg-gray-100.w-screen.min-w-0>main>div.min-h-screen>div>div>main>div.px-4.md\:px-8.grid.grid-cols-3.gap-5>div>div>div>div>div>div.chart-wrapper>div>dl>div>dt>span {
-    /* Wert-Entwicklung, Kurs chart: text Wert */
-    color: var(--main-light-font-color) !important;
-}
-
-#__layout>div>div.flex-1.bg-gray-100.w-screen.min-w-0>main>div.min-h-screen>div>div>main>div.px-4.md\:px-8.grid.grid-cols-3.gap-5>div>div>div>div>div>div.chart-wrapper>div>dl>div>dd>span {
-    /* Wert-Entwicklung, Kurs chart: upper text of value */
-    color: var(--main-light-font-color) !important;
-}
 
 /* Analyse */
 
-#__layout > div > div.flex-1.bg-gray-100.w-screen.min-w-0 > main > div.bg-white.min-h-screen > div:nth-child(1) > div > div > div > div > main > div.space-y-10 > div:nth-child(1) > div.bg-white.shadow.rounded-lg.relative > div.relative.p-5 {
+main > div.space-y-10 > div:nth-child(1) > div.bg-white.shadow.rounded-lg.relative > div.relative.p-5 {
     background-color: var(--main-light-bg-color) !important;
 }
 
