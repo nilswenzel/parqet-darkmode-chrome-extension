@@ -1,5 +1,7 @@
+.DS_Store
+.git/
+.vscode/
+extension.zip
 extension.crx
 extension.pem
 tresor-one-darkmode-chrome-extension.pem
-extension.zip
-.DS_Store
