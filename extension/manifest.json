@@ -12,7 +12,7 @@
     "background": {
         "service_worker": "background.js"
     },
-    "web_accessible_resources":[ 
+    "web_accessible_resources":[
       {
         "resources": ["darkmode.css"],
         "matches": ["https://app.parqet.com/*"]

@@ -1,5 +1,15 @@
+<div align="center">
+
+![Test](https://img.shields.io/badge/VERSION-1.2.3-success?style=for-the-badge)
+![Test](https://img.shields.io/badge/CHROME-grey?style=for-the-badge&logo=google-chrome)
+
 # Parqet darkmode
-![myImage](./docs/gifs/all_images_as_gif.gif)
+
+Darkmode for parqet.com
+
+</div>
+
+![](./docs/gifs/all_images_as_gif.gif)
 
 <br/>
 
