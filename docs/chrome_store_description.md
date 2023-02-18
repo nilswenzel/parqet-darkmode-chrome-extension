@@ -1,7 +1,7 @@
 Ein simpler Darkmode für parqet (parqet.com).
 A simple Darkmode for parqet (parqet.com).
 
-English version below. 
+English version below.
 
 Da parqet leider noch keinen Darkmode hat, habe ich einfach einen erstellt. Für Beispiele siehe die Bilder. Sollte ein Bug o.ä. auftreten, dann mir gerne melden.
 

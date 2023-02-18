@@ -13,7 +13,7 @@ window.onload = function() {
         // none
     }
 
-    // set popup slider everytime the page is 
+    // set popup slider everytime the page is
     // reloaded with persisted variable
     chrome.storage.sync.get("darkmodeIsActive", ({ darkmodeIsActive }) => {
         // set slider according to state of darkmodeIsActive
@@ -33,16 +33,16 @@ window.onload = function() {
         }
     });
 
-    // inject CSS according to darkmodeIsActive 
+    // inject CSS according to darkmodeIsActive
     chrome.storage.sync.get("darkmodeIsActive", ({ darkmodeIsActive }) => {
         if(darkmodeIsActive) {
             injectCSS();
         }
     });
-        
+
     try {
         // when the slider is clicked execute toggleDarkmode()
-        mySlider.addEventListener("change", async () => {                                   
+        mySlider.addEventListener("change", async () => {
             let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
             chrome.scripting.executeScript({
                 target: { tabId: tab.id },

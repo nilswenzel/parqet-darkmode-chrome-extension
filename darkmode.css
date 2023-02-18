@@ -119,6 +119,11 @@ strong {
     background-color: var(--second-bg-color) !important;
 }
 
+button.dropdown-trigger-button {
+    color: var(--main-font-color) !important;
+    background-color: var(--second-bg-color) !important;
+}
+
 dd.text-2xl.font-semibold:not(.text-green-500) {
     /* text of value under Investiert, Realisiert */
     color: var(--main-font-color) !important;
