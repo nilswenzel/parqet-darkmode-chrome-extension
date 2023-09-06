@@ -1,11 +1,11 @@
 <div align="center">
 
-![Test](https://img.shields.io/badge/VERSION-1.2.3-success?style=for-the-badge)
-![Test](https://img.shields.io/badge/CHROME-grey?style=for-the-badge&logo=google-chrome)
+![version](https://img.shields.io/badge/VERSION-1.2.4-success?style=for-the-badge)
+![icon](https://img.shields.io/badge/CHROME-grey?style=for-the-badge&logo=google-chrome)
 
-# Parqet darkmode
+# Darkmode for Parqet (Community Edition)
 
-Darkmode for parqet.com
+> This is NOT an official product of Parqet!
 
 </div>
 
@@ -17,19 +17,6 @@ Darkmode for parqet.com as a Chrome Web Extension. <br/>
 Also works with [Safari](#safari) and [Firefox](#firefox) using a script runner.
 
 [German version](./docs/readme_ger.md)
-
-<br/>
-
-## Information
-Since parqet has no darkmode yet, I’ve decided to create one myself. For examples check out the images. If you find a bug don’t hesitate to contact me and let me know.
-
-The darkmode can be deactivated/activated at any time in the popup.
-
-- tested on Mac/Windows (Chrome Version 100.0.4896.75)
-- (unofficial)
-
-## What is parqet?
-[Parqet](https://www.parqet.com) enables you to visualize and analyze your portfolio and keep track of your assets at any time.
 
 ## Usage
 

@@ -1,7 +1,7 @@
 {
-    "name": "parqet Darkmode",
-    "description" : "Darkmode for parqet.com",
-    "version": "1.2.3",
+    "name": "Darkmode für Parqet (Community Edition)",
+    "description" : "Darkmode for parqet.com (Community Edition)",
+    "version": "1.2.4",
     "manifest_version": 3,
     "content_scripts":[
         {
@@ -9,9 +9,6 @@
           "js": ["content.js"]
         }
     ],
-    "background": {
-        "service_worker": "background.js"
-    },
     "web_accessible_resources":[
       {
         "resources": ["darkmode.css"],
@@ -20,7 +17,6 @@
     ],
     "permissions": ["storage", "activeTab", "scripting"],
     "action": {
-        "default_popup": "popup.html",
         "default_icon": {
             "16": "/images/icon_16x16.png",
             "32": "/images/icon_32x32.png",
