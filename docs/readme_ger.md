@@ -1,23 +1,16 @@
-# Parqet Darkmode
-![myImage](../docs/gifs/readme_images.gif)
+<div align="center">
 
+# Darkmode für Parqet (Community Edition)
+
+> Dies ist KEIN offizielles Produkt von Parqet!
+
+![](./gifs/all_images_as_gif.gif)
+
+</div>
 <br/>
 
 Darkmode für parqet.com in Form einer Chrome Web Extension. <br/>
 Funktioniert auch mit [Safari](#safari) und [Firefox](#firefox) unter Zuhilfenahme eines Script-Runners.
-
-<br/>
-
-## Informationen:
-Da parqet leider noch keinen Darkmode hat, habe ich einfach einen erstellt. Für Beispiele siehe die Bilder. Sollte ein Bug o.ä. auftreten, dann mir gerne melden.
-
-Der Darkmode kann auch jederzeit im Popup deaktiviert/aktiviert werden.
-
-- getestet auf Mac/Windows (Chrome Version 100.0.4896.75)
-- (inoffiziell)
-
-## Was ist parqet?
-Mit [Parqet](https://www.parqet.com) lassen sich Depots visualisieren und analysieren. Dadurch hat man sein Vermögen immer jederzeit im Blick.
 
 ## Installation
 
