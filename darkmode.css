@@ -84,18 +84,12 @@ dd {
     color: var(--second-darker-font-color) !important;
 }
 
-[type="text"],
-[type="email"],
-[type="url"],
-[type="number"],
-[type="date"],
-[type="month"],
-[type="search"],
-[type="time"],
-[type="week"],
-[multiple],
-textarea,
 select {
+    background-color: var(--main-transparent-bg-color) !important;
+    color: var(--main-font-color) !important;
+}
+
+input {
     background-color: var(--main-transparent-bg-color) !important;
     color: var(--main-font-color) !important;
 }
@@ -594,11 +588,6 @@ nav.relative.z-0.rounded-lg.shadow.flex.divide-x.divide-gray-200.allocation-tabs
     color: var(--main-font-color);
 }
 
-/* when click on holding bearbeiten button */
-input[type="checkbox"] {
-    background-color: var(--second-bg-color) !important;
-}
-
 .content-type-and-date .hidden {
     color: var(--second-darker-font-color) !important;
     /* date text in left column */
@@ -637,6 +626,16 @@ li a.block.rounded-lg:hover {
     border-bottom-left-radius: 0.6em !important;
 }
 
+.bg-white.rounded-lg.shadow:has(.chart-container) .bg-white {
+    background-color: transparent !important;
+}
+
+.bg-white.rounded-lg.shadow:has(.chart-container) .bg-white p,
+.bg-white.rounded-lg.shadow:has(.chart-container) .bg-white a,
+.bg-white.rounded-lg.shadow:has(.chart-container) .bg-white span {
+    color: var(--main-light-font-color) !important;
+}
+
 .bg-white.rounded-lg.shadow:has(.chart-container) .bg-white.opacity-50,
 .chart-wrapper .bg-white.opacity-50 {
     background-color: transparent !important;
@@ -664,7 +663,7 @@ nav .is-active {
     color: var(--teal-font-color) !important;
 }
 
-.chart-box .text-gray-700 {
+.chart-box [role="heading"] .text-gray-700 {
     color: var(--main-light-font-color) !important;
 }
 
@@ -705,20 +704,5 @@ main
     > div:nth-child(1)
     > div.bg-white.shadow.rounded-lg.relative
     > div.relative.p-5 {
-    background-color: var(--main-light-bg-color) !important;
-}
-
-/* Dividenden */
-
-.dividends-page .chart-container {
-    /* Akkumuliert, Akkumuliert (pro Jahr)  chart */
-    background-color: var(--main-light-bg-color) !important;
-    border-top-right-radius: 0em !important;
-    border-top-left-radius: 0em !important;
-    border-bottom-right-radius: 0.6em !important;
-    border-bottom-left-radius: 0.6em !important;
-}
-
-.h-full.w-full.px-5.py-10 {
     background-color: var(--main-light-bg-color) !important;
 }
